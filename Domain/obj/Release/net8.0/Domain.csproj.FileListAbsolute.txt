@@ -1,0 +1,12 @@
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\bin\Release\net8.0\Domain.deps.json
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\bin\Release\net8.0\Domain.dll
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\bin\Release\net8.0\Domain.pdb
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\Domain.csproj.AssemblyReference.cache
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\Domain.AssemblyInfoInputs.cache
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\Domain.AssemblyInfo.cs
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\Domain.dll
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\refint\Domain.dll
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\Domain.pdb
+C:\TINExpress\Source\TINEXPRESSAPIS\Domain\obj\Release\net8.0\ref\Domain.dll

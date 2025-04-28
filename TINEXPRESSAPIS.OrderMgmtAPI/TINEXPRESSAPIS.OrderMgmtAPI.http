@@ -1,0 +1,6 @@
+@TINEXPRESSAPIS.OrderMgmtAPI_HostAddress = http://localhost:5120
+
+GET {{TINEXPRESSAPIS.OrderMgmtAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

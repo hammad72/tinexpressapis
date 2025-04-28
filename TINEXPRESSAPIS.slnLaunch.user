@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]
