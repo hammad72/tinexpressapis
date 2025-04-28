@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 252,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +74,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:36:32.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\appsettings.json",
               "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\appsettings.json",
@@ -82,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\appsettings.json",
               "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\appsettings.json",
@@ -95,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\Program.cs",
               "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Program.cs",
@@ -107,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CustomerUserProfileController.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerUserProfileController.cs",
               "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerUserProfileController.cs",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CustomerUserProfileService.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CustomerUserProfileService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\CustomerUserProfileService.cs",
@@ -131,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ICustomerUserProfileService.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Interfaces\\ICustomerUserProfileService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\ICustomerUserProfileService.cs",
@@ -143,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CustomerUserProfileRepository.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\CustomerUserProfileRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CustomerUserProfileRepository.cs",
@@ -155,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "IUserProfileRepository.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Interfaces\\IUserProfileRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserProfileRepository.cs",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserProfileService.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\UserProfileService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\UserProfileService.cs",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ICustomerProfileRepository.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Interfaces\\ICustomerProfileRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\ICustomerProfileRepository.cs",
@@ -191,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ICustomerUserProfileRepository.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Interfaces\\ICustomerUserProfileRepository.cs",
               "RelativeDocumentMoniker": "Domain\\Interfaces\\ICustomerUserProfileRepository.cs",
@@ -203,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UserProfileRepository.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\UserProfileRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserProfileRepository.cs",
@@ -215,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IUserProfileService.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Interfaces\\IUserProfileService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IUserProfileService.cs",
