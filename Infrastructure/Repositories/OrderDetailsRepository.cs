@@ -35,10 +35,15 @@ namespace Infrastructure.Repositories
             using var transaction = await _orderDbContext.Database.BeginTransactionAsync(System.Data.IsolationLevel.ReadCommitted);
             try
             {
+                DateTime dt = new DateTime();
+                dt = DateTime.Now;
                 List<orderitems> oiList = new List<orderitems>();
                 ConsignmentNumber = generateCNUM();
                 o.consignment_number = ConsignmentNumber;
+                o.order_status_id = 1;
+                o.order_status_change_date = dt;
                 await _orderDbContext.orderdetails.AddAsync(o);
+                await _orderDbContext.SaveChangesAsync();
 
                 foreach (var item in oid)
                 {

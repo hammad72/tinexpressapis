@@ -16,6 +16,70 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.OrderDetailController",
+    "Method": "GetQuoteCP",
+    "RelativePath": "api/OrderDetail/GetQuoteCP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.OrderDetailController",
+    "Method": "GetQuoteZU",
+    "RelativePath": "api/OrderDetail/GetQuoteZU",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.OrderDetailController",
+    "Method": "OrderBookingCP",
+    "RelativePath": "api/OrderDetail/OrderBookingCP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.OrderDetailController",
+    "Method": "OrderBookingZU",
+    "RelativePath": "api/OrderDetail/OrderBookingZU",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.PackageContentController",
     "Method": "GetAll",
     "RelativePath": "api/PackageContent",
