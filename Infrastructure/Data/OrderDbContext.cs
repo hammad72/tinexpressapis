@@ -11,6 +11,7 @@ namespace Infrastructure.Data
         public DbSet<paymentmethod> paymentmethod { get; set; }
         public DbSet<orderdetails> orderdetails { get; set; }
         public DbSet<orderitems> orderitems { get; set; }
+        public DbSet<courierapisetting> courierapisetting { get; set; }
         public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options)
         {
 
