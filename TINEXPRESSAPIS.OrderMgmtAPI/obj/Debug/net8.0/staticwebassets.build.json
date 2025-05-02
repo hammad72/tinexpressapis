@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "moLrWsYogRD2ooux5lH7WfkyXhV1lFZiY/BzrFYBZnE=",
+  "Hash": "4+VTdtDSmxDsMcitNTrpZQRp49GXx1MjscVcx9XqQKc=",
   "Source": "TINEXPRESSAPIS.OrderMgmtAPI",
   "BasePath": "_content/TINEXPRESSAPIS.OrderMgmtAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

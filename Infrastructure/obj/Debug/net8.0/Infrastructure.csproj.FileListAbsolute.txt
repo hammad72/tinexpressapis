@@ -14,3 +14,19 @@ C:\TINExpress\Source\TINEXPRESSAPIS\Infrastructure\obj\Debug\net8.0\Infrastructu
 C:\TINExpress\Source\TINEXPRESSAPIS\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\TINExpress\Source\TINEXPRESSAPIS\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\TINExpress\Source\TINEXPRESSAPIS\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+C:\TIN Projects\GIT-Lab\tinexpressapis\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll

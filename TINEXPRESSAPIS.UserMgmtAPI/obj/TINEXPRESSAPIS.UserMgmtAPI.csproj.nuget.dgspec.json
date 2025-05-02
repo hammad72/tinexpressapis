@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj": {}
+    "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj": {}
   },
   "projects": {
-    "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Application.csproj": {
+    "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\obj\\",
+        "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
+        "outputPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +27,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Domain.csproj"
+              "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Domain.csproj"
               }
             }
           }
@@ -47,8 +49,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -87,24 +88,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Domain.csproj": {
+    "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\obj\\",
+        "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
+        "outputPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -113,6 +115,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -130,8 +133,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -166,24 +168,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\obj\\",
+        "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
+        "outputPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -192,14 +195,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Domain.csproj"
+              "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Domain.csproj"
               }
             }
           }
@@ -213,13 +217,28 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.69.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.12.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Facebook": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -232,9 +251,17 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.12.0, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.9.0, )"
             }
           },
           "imports": [
@@ -253,24 +280,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj": {
+    "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj",
+        "projectUniqueName": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj",
         "projectName": "TINEXPRESSAPIS.UserMgmtAPI",
-        "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.UserMgmtAPI\\obj\\",
+        "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj",
+        "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
+        "outputPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -279,17 +307,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Application.csproj": {
-                "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Application.csproj"
+              "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Application.csproj": {
+                "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Application.csproj"
               },
-              "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Infrastructure.csproj"
+              "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -303,8 +332,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -346,7 +374,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

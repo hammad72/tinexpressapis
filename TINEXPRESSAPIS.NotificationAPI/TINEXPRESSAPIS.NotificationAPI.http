@@ -1,0 +1,6 @@
+@TINEXPRESSAPIS.NotificationAPI_HostAddress = http://localhost:5134
+
+GET {{TINEXPRESSAPIS.NotificationAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
