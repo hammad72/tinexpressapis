@@ -5,6 +5,8 @@ namespace Infrastructure.Data
 {
     public class UserMgmtDbContext : DbContext
     {
+        public DbSet<loginmodel> loginmodel { get; set; }
+        public DbSet<logindetail> logindetail { get; set; }
         public DbSet<userlogins> userlogins { get; set; }
         public DbSet<userprofile> userprofile { get; set; }
         public DbSet<customerprofile> customerprofile { get; set; }

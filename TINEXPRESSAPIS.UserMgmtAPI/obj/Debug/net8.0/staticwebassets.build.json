@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "2QXZ5JOcQSqRKYZ5r2hP+mEySMEcxWXoWw5Y2x6us+4=",
+  "Hash": "1S/k2YubIX7Fn8ltzNMmTFVqlPMvCQ3q/KNgQGcRrys=",
   "Source": "TINEXPRESSAPIS.UserMgmtAPI",
   "BasePath": "_content/TINEXPRESSAPIS.UserMgmtAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

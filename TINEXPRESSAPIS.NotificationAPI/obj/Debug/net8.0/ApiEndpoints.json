@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "SendTestEmail",
+    "RelativePath": "api/SendOTP/send-test-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "SendOTP",
+    "RelativePath": "api/SendOTP/SendOTP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.EmailOTPRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "verifyOtpChangePass",
+    "RelativePath": "api/SendOTP/verify-otp-changePass",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.OtpChangePassRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
