@@ -1,5 +1,185 @@
 [
   {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerBudgetController",
+    "Method": "GetAll",
+    "RelativePath": "api/CustomerBudget",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerBudgetController",
+    "Method": "Create",
+    "RelativePath": "api/CustomerBudget",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.CreateCustomerBudgetDtoArr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerBudgetController",
+    "Method": "Update",
+    "RelativePath": "api/CustomerBudget",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.UpdateCustomerBudgetDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerBudgetController",
+    "Method": "Delete",
+    "RelativePath": "api/CustomerBudget",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerBudgetController",
+    "Method": "GetByCId",
+    "RelativePath": "api/CustomerBudget/GetByCId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerBudgetController",
+    "Method": "GetById",
+    "RelativePath": "api/CustomerBudget/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerPriorityController",
+    "Method": "GetAll",
+    "RelativePath": "api/CustomerPriority",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerPriorityController",
+    "Method": "Create",
+    "RelativePath": "api/CustomerPriority",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.CreateCustomerPriorityDtoArr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerPriorityController",
+    "Method": "Update",
+    "RelativePath": "api/CustomerPriority",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Application.DTOs.UpdateCustomerPriorityDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerPriorityController",
+    "Method": "Delete",
+    "RelativePath": "api/CustomerPriority",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerPriorityController",
+    "Method": "GetByCId",
+    "RelativePath": "api/CustomerPriority/GetByCId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.CustomerPriorityController",
+    "Method": "GetById",
+    "RelativePath": "api/CustomerPriority/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TINEXPRESSAPIS.OrderMgmtAPI.Controllers.OrderDetailController",
     "Method": "Create",
     "RelativePath": "api/OrderDetail",
