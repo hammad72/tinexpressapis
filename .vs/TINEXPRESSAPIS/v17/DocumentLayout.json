@@ -3,60 +3,20 @@
   "WorkspaceRootPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\dtos\\orderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\dtos\\orderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\entities\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\services\\courieruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\services\\courieruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\dtos\\courieruserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\dtos\\courieruserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\entities\\courieruserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\courieruserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\entities\\courierapisetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\courierapisetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tinexpress\\source\\tinexpressapis\\infrastructure\\repositories\\courierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\courierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tinexpress\\source\\tinexpressapis\\infrastructure\\repositories\\getquoterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\getquoterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tinexpress\\source\\tinexpressapis\\infrastructure\\repositories\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\services\\courierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\services\\courierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\interfaces\\icourierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\interfaces\\icourierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\interfaces\\icourierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\icourierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,8 +25,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 252,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 175,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,184 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderDetailsDto.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\OrderDetailsDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\OrderDetailsDto.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\OrderDetailsDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\OrderDetailsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:41.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "orderdetails.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\orderdetails.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\orderdetails.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\orderdetails.cs",
-              "RelativeToolTip": "Domain\\Entities\\orderdetails.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwCoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:39.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourierUserProfileDto.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\CourierUserProfileDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\CourierUserProfileDto.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\CourierUserProfileDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\CourierUserProfileDto.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:32.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "courieruserprofile.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courieruserprofile.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\courieruserprofile.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courieruserprofile.cs",
-              "RelativeToolTip": "Domain\\Entities\\courieruserprofile.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwCcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:30.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "courierapisetting.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courierapisetting.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\courierapisetting.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courierapisetting.cs",
-              "RelativeToolTip": "Domain\\Entities\\courierapisetting.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:28.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ICourierBookingService.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Interfaces\\ICourierBookingService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\ICourierBookingService.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Interfaces\\ICourierBookingService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\ICourierBookingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:11:42.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrderDetailController.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBkAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:10:52.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CourierUserProfileService.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierUserProfileService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\CourierUserProfileService.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierUserProfileService.cs",
-              "RelativeToolTip": "Application\\Services\\CourierUserProfileService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAqwBoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:04:13.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CourierBookingService.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierBookingService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\CourierBookingService.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierBookingService.cs",
-              "RelativeToolTip": "Application\\Services\\CourierBookingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:12:01.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:04:13.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CourierBookingRepository.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAmwD8AAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:09:38.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetQuoteRepository.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAmwDsAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:13:05.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ICourierBookingRepository.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:12:10.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "OrderDetailsRepository.cs",
               "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\OrderDetailsRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\OrderDetailsRepository.cs",
               "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\OrderDetailsRepository.cs",
               "RelativeToolTip": "Infrastructure\\Repositories\\OrderDetailsRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwCAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:05:41.123Z",
+              "WhenOpened": "2025-05-01T23:26:01.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
+              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T22:56:56.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetQuoteRepository.cs",
+              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\GetQuoteRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GetQuoteRepository.cs",
+              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\GetQuoteRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\GetQuoteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:47:56.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:47:47.924Z",
               "EditorCaption": ""
             }
           ]

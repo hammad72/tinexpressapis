@@ -47,6 +47,12 @@ try
     builder.Services.AddScoped<ICourierBookingService, CourierBookingService>();
     builder.Services.AddScoped<ICourierBookingRepository, CourierBookingRepository>();
 
+    builder.Services.AddScoped<ICustomerBudgetService, CustomerBudgetService>();
+    builder.Services.AddScoped<ICustomerBudgetRepository, CustomerBudgetRepository>();
+
+    builder.Services.AddScoped<ICustomerPriorityService, CustomerPriorityService>();
+    builder.Services.AddScoped<ICustomerPriorityRepository, CustomerPriorityRepository>();
+
     builder.Services.AddAutoMapper(typeof(MappingProfile));
 
     builder.Services.AddControllers();

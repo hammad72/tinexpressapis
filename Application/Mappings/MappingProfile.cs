@@ -56,6 +56,16 @@ namespace Application.Mappings
 
             CreateMap<OrderItemsDto, orderitems>();
             CreateMap<orderitems, OrderItemsDto>();
+
+            CreateMap<CreateCustomerPriorityDtoArr, customerpriorityArr>();
+            CreateMap<customerpriority, CustomerPriorityDto>();
+            CreateMap<CreateCustomerPriorityDto, customerpriority>();
+            CreateMap<UpdateCustomerPriorityDto, customerpriority>();
+
+            CreateMap<CreateCustomerBudgetDtoArr, customerbudgetArr>();
+            CreateMap<customerbudget, CustomerBudgetDto>();
+            CreateMap<CreateCustomerBudgetDto, customerbudget>();
+            CreateMap<UpdateCustomerBudgetDto, customerbudget>();
         }
     }
 }

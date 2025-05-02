@@ -12,6 +12,8 @@ namespace Infrastructure.Data
         public DbSet<orderdetails> orderdetails { get; set; }
         public DbSet<orderitems> orderitems { get; set; }
         public DbSet<courierapisetting> courierapisetting { get; set; }
+        public DbSet<customerpriority> customerpriority { get; set; }
+        public DbSet<customerbudget> customerbudget { get; set; }
         public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options)
         {
 
