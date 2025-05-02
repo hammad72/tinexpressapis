@@ -8,6 +8,14 @@ namespace Application.Mappings
     {
         public MappingProfile()
         {
+            CreateMap<socialinfo, SocialInfoDTO>();
+
+            CreateMap<loginmodel, LoginModelDto>();
+            CreateMap<CreateAndUpdateLoginModelDto, loginmodel>();
+
+            CreateMap<logindetail, LoginDetailDto>();
+            CreateMap<CreateLoginDetailDto, logindetail>();
+
             CreateMap<userlogins, UserLoginsDto>();
             CreateMap<CreateUserLoginsDto, userlogins>();
             CreateMap<UpdateUserLoginsDto, userlogins>();

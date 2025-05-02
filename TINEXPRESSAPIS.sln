@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TINEXPRESSAPIS.UserMgmtAPI", "TINEXPRESSAPIS.UserMgmtAPI\TINEXPRESSAPIS.UserMgmtAPI.csproj", "{025C57A7-EB97-4124-943C-9DEAF67C41C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TINEXPRESSAPIS.UserMgmtAPI", "TINEXPRESSAPIS.UserMgmtAPI\TINEXPRESSAPIS.UserMgmtAPI.csproj", "{025C57A7-EB97-4124-943C-9DEAF67C41C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{1851787F-93C4-406B-8DF9-FE9415017172}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{1851787F-93C4-406B-8DF9-FE9415017172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TINEXPRESSAPIS.OrderMgmtAPI", "TINEXPRESSAPIS.OrderMgmtAPI\TINEXPRESSAPIS.OrderMgmtAPI.csproj", "{0B827FA0-E940-4FBA-B0E3-A070507B971E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TINEXPRESSAPIS.OrderMgmtAPI", "TINEXPRESSAPIS.OrderMgmtAPI\TINEXPRESSAPIS.OrderMgmtAPI.csproj", "{0B827FA0-E940-4FBA-B0E3-A070507B971E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TINEXPRESSAPIS.NotificationAPI", "TINEXPRESSAPIS.NotificationAPI\TINEXPRESSAPIS.NotificationAPI.csproj", "{5252C514-DD54-408D-AFD8-A037706C4874}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0B827FA0-E940-4FBA-B0E3-A070507B971E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B827FA0-E940-4FBA-B0E3-A070507B971E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B827FA0-E940-4FBA-B0E3-A070507B971E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5252C514-DD54-408D-AFD8-A037706C4874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5252C514-DD54-408D-AFD8-A037706C4874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5252C514-DD54-408D-AFD8-A037706C4874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5252C514-DD54-408D-AFD8-A037706C4874}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

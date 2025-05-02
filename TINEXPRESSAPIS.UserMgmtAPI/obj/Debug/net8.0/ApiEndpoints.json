@@ -407,6 +407,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TINEXPRESSAPIS.UserMgmtAPI.Controllers.UserLoginsController",
+    "Method": "Login",
+    "RelativePath": "api/UserLogins/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.UserMgmtAPI.Controllers.UserLoginsController",
+    "Method": "Refresh",
+    "RelativePath": "api/UserLogins/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.RefreshRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.UserMgmtAPI.Controllers.UserLoginsController",
+    "Method": "SocialLogin",
+    "RelativePath": "api/UserLogins/social-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.SocialLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TINEXPRESSAPIS.UserMgmtAPI.Controllers.UserProfileController",
     "Method": "Create",
     "RelativePath": "api/UserProfile/Create",

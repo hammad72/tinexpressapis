@@ -1,62 +1,149 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\",
+  "WorkspaceRootPath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\dtos\\orderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\dtos\\orderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\infrastructure\\data\\notifcationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\notifcationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\entities\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\services\\courieruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\services\\courieruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\infrastructure\\data\\usermgmtdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\usermgmtdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\dtos\\courieruserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\dtos\\courieruserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\infrastructure\\repositories\\userloginsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userloginsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\entities\\courieruserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\courieruserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.usermgmtapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|solutionrelative:tinexpressapis.usermgmtapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\entities\\courierapisetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\courierapisetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.usermgmtapi\\controllers\\usertypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|solutionrelative:tinexpressapis.usermgmtapi\\controllers\\usertypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tinexpress\\source\\tinexpressapis\\infrastructure\\repositories\\courierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\courierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.usermgmtapi\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|solutionrelative:tinexpressapis.usermgmtapi\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tinexpress\\source\\tinexpressapis\\infrastructure\\repositories\\getquoterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\getquoterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.usermgmtapi\\controllers\\customeruserprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|solutionrelative:tinexpressapis.usermgmtapi\\controllers\\customeruserprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.usermgmtapi\\controllers\\customerprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|solutionrelative:tinexpressapis.usermgmtapi\\controllers\\customerprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tinexpress\\source\\tinexpressapis\\tinexpressapis.ordermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.usermgmtapi\\controllers\\userloginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|solutionrelative:tinexpressapis.usermgmtapi\\controllers\\userloginscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tinexpress\\source\\tinexpressapis\\infrastructure\\repositories\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\interfaces\\iuserloginsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iuserloginsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\services\\courierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\services\\courierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\services\\userloginsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\services\\userloginsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tinexpress\\source\\tinexpressapis\\application\\interfaces\\icourierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\interfaces\\icourierbookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\domain\\interfaces\\iuserloginsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserloginsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tinexpress\\source\\tinexpressapis\\domain\\interfaces\\icourierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\icourierbookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\dtos\\userloginsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\dtos\\userloginsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\infrastructure\\repositories\\emailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\emailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.notificationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|solutionrelative:tinexpressapis.notificationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\interfaces\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\interfaces\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\interfaces\\ipackagecontentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\interfaces\\ipackagecontentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.notificationapi\\controllers\\sendotpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|solutionrelative:tinexpressapis.notificationapi\\controllers\\sendotpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.notificationapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|solutionrelative:tinexpressapis.notificationapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.notificationapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|solutionrelative:tinexpressapis.notificationapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.notificationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|solutionrelative:tinexpressapis.notificationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.notificationapi\\tinexpressapis.notificationapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5252C514-DD54-408D-AFD8-A037706C4874}|TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj|solutionrelative:tinexpressapis.notificationapi\\tinexpressapis.notificationapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.ordermgmtapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0B827FA0-E940-4FBA-B0E3-A070507B971E}|TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj|solutionrelative:tinexpressapis.ordermgmtapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\tinexpressapis.usermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025C57A7-EB97-4124-943C-9DEAF67C41C0}|TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj|solutionrelative:tinexpressapis.usermgmtapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\services\\customeruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\services\\customeruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\interfaces\\icustomeruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\interfaces\\icustomeruserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\infrastructure\\repositories\\customeruserprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\customeruserprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\domain\\interfaces\\iuserprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\domain\\interfaces\\icustomerprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\icustomerprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\domain\\interfaces\\icustomeruserprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5CB51A4-D7EC-4E6D-B4BA-6295D5AF4EFD}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\icustomeruserprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\infrastructure\\repositories\\userprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F81A9AE8-C9C1-4269-B7ED-8811E85C5F36}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|c:\\tin projects\\git-lab\\tinexpressapis\\application\\interfaces\\iuserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1851787F-93C4-406B-8DF9-FE9415017172}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iuserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,192 +153,486 @@
       "DocumentGroups": [
         {
           "DockedWidth": 252,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderDetailsDto.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\OrderDetailsDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\OrderDetailsDto.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\OrderDetailsDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\OrderDetailsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:41.956Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "orderdetails.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\orderdetails.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\orderdetails.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\orderdetails.cs",
-              "RelativeToolTip": "Domain\\Entities\\orderdetails.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwCoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:39.749Z",
+              "Title": "Infrastructure",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-02T11:38:00.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourierUserProfileDto.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\CourierUserProfileDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\CourierUserProfileDto.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\DTOs\\CourierUserProfileDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\CourierUserProfileDto.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "NotifcationDBContext.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Data\\NotifcationDBContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\NotifcationDBContext.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Data\\NotifcationDBContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\NotifcationDBContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAYwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:32.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "courieruserprofile.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courieruserprofile.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\courieruserprofile.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courieruserprofile.cs",
-              "RelativeToolTip": "Domain\\Entities\\courieruserprofile.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwCcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:30.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "courierapisetting.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courierapisetting.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\courierapisetting.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Entities\\courierapisetting.cs",
-              "RelativeToolTip": "Domain\\Entities\\courierapisetting.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T07:40:28.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ICourierBookingService.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Interfaces\\ICourierBookingService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\ICourierBookingService.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Interfaces\\ICourierBookingService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\ICourierBookingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:11:42.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrderDetailController.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\Controllers\\OrderDetailController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBkAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:10:52.122Z",
+              "WhenOpened": "2025-05-02T11:37:32.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CourierUserProfileService.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierUserProfileService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\CourierUserProfileService.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierUserProfileService.cs",
-              "RelativeToolTip": "Application\\Services\\CourierUserProfileService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAqwBoAAABBAAAAAAAAAA==",
+              "Title": "UserMgmtDbContext.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Data\\UserMgmtDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\UserMgmtDbContext.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Data\\UserMgmtDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\UserMgmtDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:04:13.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CourierBookingService.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierBookingService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\CourierBookingService.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Application\\Services\\CourierBookingService.cs",
-              "RelativeToolTip": "Application\\Services\\CourierBookingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:12:01.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:04:13.887Z",
+              "WhenOpened": "2025-05-02T11:36:59.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CourierBookingRepository.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\CourierBookingRepository.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAmwD8AAABUAAAAAAAAAA==",
+              "Title": "UserProfileController.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserProfileController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserProfileController.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserProfileController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserProfileController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:09:38.114Z",
+              "WhenOpened": "2025-05-02T11:35:57.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetQuoteRepository.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\GetQuoteRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAmwDsAAABUAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "CustomerProfileController.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerProfileController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerProfileController.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerProfileController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerProfileController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:13:05.971Z",
+              "WhenOpened": "2025-05-02T11:35:29.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ICourierBookingRepository.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\ICourierBookingRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "UserLoginsController.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserLoginsController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserLoginsController.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserLoginsController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserLoginsController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAwwAsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:12:10.129Z",
+              "WhenOpened": "2025-05-02T11:31:25.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserTypesController.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserTypesController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserTypesController.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserTypesController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\UserTypesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:27:23.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\appsettings.json",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\appsettings.json",
+              "RelativeToolTip": "TINEXPRESSAPIS.UserMgmtAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-28T07:06:54.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserLoginsRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\UserLoginsRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserLoginsRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\UserLoginsRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserLoginsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:33:42.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "OrderDetailsRepository.cs",
-              "DocumentMoniker": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\OrderDetailsRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\OrderDetailsRepository.cs",
-              "ToolTip": "C:\\TINExpress\\Source\\TINEXPRESSAPIS\\Infrastructure\\Repositories\\OrderDetailsRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\OrderDetailsRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwCAAAAAIAAAAAAAAAA==",
+              "Title": "IUserLoginsService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IUserLoginsService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IUserLoginsService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IUserLoginsService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IUserLoginsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T11:05:41.123Z",
+              "WhenOpened": "2025-05-02T11:32:15.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserLoginsService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Services\\UserLoginsService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserLoginsService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Services\\UserLoginsService.cs",
+              "RelativeToolTip": "Application\\Services\\UserLoginsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:32:37.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerUserProfileController.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerUserProfileController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerUserProfileController.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerUserProfileController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.UserMgmtAPI\\Controllers\\CustomerUserProfileController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA3wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:27:45.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserLoginsRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\IUserLoginsRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserLoginsRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\IUserLoginsRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUserLoginsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:33:25.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmailRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\EmailRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\EmailRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\EmailRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\EmailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T11:17:37.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserLoginsDto.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\DTOs\\UserLoginsDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\UserLoginsDto.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\DTOs\\UserLoginsDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\UserLoginsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:43:56.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "Application\\Mappings\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:39:35.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IJwtTokenService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IJwtTokenService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IJwtTokenService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IJwtTokenService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IJwtTokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:38:11.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPackageContentService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IPackageContentService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IPackageContentService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IPackageContentService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IPackageContentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:36:40.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.NotificationAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TINEXPRESSAPIS.NotificationAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T10:32:52.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.NotificationAPI\\Program.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\Program.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.NotificationAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:31:38.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.NotificationAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\appsettings.Development.json",
+              "RelativeToolTip": "TINEXPRESSAPIS.NotificationAPI\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T10:32:43.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.NotificationAPI\\appsettings.json",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\appsettings.json",
+              "RelativeToolTip": "TINEXPRESSAPIS.NotificationAPI\\appsettings.json",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAYwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T10:32:31.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TINEXPRESSAPIS.NotificationAPI.http",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.http",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.http",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.http",
+              "RelativeToolTip": "TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-02T10:30:21.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SendOTPController.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\Controllers\\SendOTPController.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.NotificationAPI\\Controllers\\SendOTPController.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.NotificationAPI\\Controllers\\SendOTPController.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.NotificationAPI\\Controllers\\SendOTPController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T10:31:15.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.200\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AQIAAL4AAAAAAAAAAAAAANgAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-02T10:15:38.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.OrderMgmtAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.OrderMgmtAPI\\appsettings.json",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.OrderMgmtAPI\\appsettings.json",
+              "RelativeToolTip": "TINEXPRESSAPIS.OrderMgmtAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-28T07:06:46.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TINEXPRESSAPIS.UserMgmtAPI\\Program.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.UserMgmtAPI\\Program.cs",
+              "RelativeToolTip": "TINEXPRESSAPIS.UserMgmtAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:29:50.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CustomerUserProfileService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Services\\CustomerUserProfileService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\CustomerUserProfileService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Services\\CustomerUserProfileService.cs",
+              "RelativeToolTip": "Application\\Services\\CustomerUserProfileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:24:30.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ICustomerUserProfileService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\ICustomerUserProfileService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ICustomerUserProfileService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\ICustomerUserProfileService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ICustomerUserProfileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:24:15.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CustomerUserProfileRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\CustomerUserProfileRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CustomerUserProfileRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\CustomerUserProfileRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\CustomerUserProfileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:26:58.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IUserProfileRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\IUserProfileRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserProfileRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\IUserProfileRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUserProfileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:26:12.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserProfileService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Services\\UserProfileService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserProfileService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Services\\UserProfileService.cs",
+              "RelativeToolTip": "Application\\Services\\UserProfileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:24:35.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ICustomerProfileRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\ICustomerProfileRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\ICustomerProfileRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\ICustomerProfileRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\ICustomerProfileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:26:21.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ICustomerUserProfileRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\ICustomerUserProfileRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\ICustomerUserProfileRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Domain\\Interfaces\\ICustomerUserProfileRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\ICustomerUserProfileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:26:33.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserProfileRepository.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\UserProfileRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserProfileRepository.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Infrastructure\\Repositories\\UserProfileRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserProfileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:26:48.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IUserProfileService.cs",
+              "DocumentMoniker": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IUserProfileService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IUserProfileService.cs",
+              "ToolTip": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\Application\\Interfaces\\IUserProfileService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IUserProfileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T20:24:07.949Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Application/obj/Debug/net8.0
+/.vs/TINEXPRESSAPIS
+/Domain/obj/Debug/net8.0
+/Infrastructure/obj/Debug/net8.0
+/TINEXPRESSAPIS.OrderMgmtAPI/obj/Debug/net8.0
+/TINEXPRESSAPIS.UserMgmtAPI/obj/Debug/net8.0
