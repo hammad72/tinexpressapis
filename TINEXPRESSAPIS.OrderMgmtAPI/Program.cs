@@ -29,6 +29,8 @@ try
 
     builder.Services.AddHttpClient();
 
+    builder.Services.AddScoped<IExportRepository, ExportRepository>();
+
     builder.Services.AddScoped<IShipmentService, ShipmentService>();
     builder.Services.AddScoped<IShipmentRepository, ShipmentRepository>();
 

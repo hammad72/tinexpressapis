@@ -12,7 +12,9 @@ namespace Application.Interfaces
     {
         Task<List<OrderSourceDto>> GetAllOrderSourceAsync();
         Task<List<OptionsDto>> GetAllOptionsAsync();
-        Task<PaginatedList<shipmentDto>> GetShipmentAsync(int pageIndex, int pageSize);
-
+        Task<List<shipmentDto>> getAllShipment(int? ordSource, int? opt, string? search);
+        Task<PaginatedList<shipmentDto>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search);
+        Task<byte[]> ExportShipmentsToCsv(int? ordSource, int? opt, string? search);
+        Task<byte[]> ExportShipmentsToExcel(int? ordSource, int? opt, string? search);
     }
 }

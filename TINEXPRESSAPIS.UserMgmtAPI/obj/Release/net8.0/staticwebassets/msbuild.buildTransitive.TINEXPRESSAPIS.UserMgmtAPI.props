@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TINEXPRESSAPIS.UserMgmtAPI.props" />
-</Project>
