@@ -8,6 +8,12 @@ namespace Application.Mappings
     {
         public MappingProfile()
         {
+            CreateMap<shipment_columns, shipmentDto>();
+
+            CreateMap<options, OptionsDto>();
+
+            CreateMap<ordersource, OrderSourceDto>();
+
             CreateMap<socialinfo, SocialInfoDTO>();
 
             CreateMap<loginmodel, LoginModelDto>();

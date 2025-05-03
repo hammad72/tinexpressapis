@@ -100,4 +100,14 @@ namespace Domain.Entities
         public orderdetails odd { get; set; }
         public List<orderitems> oid { get; set; }
     }
+    public class shipment_columns {
+        public string? consignment_number { get; set; }
+        public string? order_number { get; set; }
+      
+        public string? reciever_name { get; set; }
+        public string? order_status_title { get; set; }
+        public DateTime? order_status_change_date { get; set; }
+        public string? suburb_dropoff { get; set; }
+    }
+
 }

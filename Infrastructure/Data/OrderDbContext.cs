@@ -6,6 +6,9 @@ namespace Infrastructure.Data
 {
     public class OrderDbContext : DbContext
     {
+        public DbSet<options> options { get; set; }
+        public DbSet<ordersource> ordersource { get; set; }
+
         public DbSet<packagetype> packagetype { get; set; }
         public DbSet<packagecontent> packagecontent { get; set; }
         public DbSet<paymentmethod> paymentmethod { get; set; }

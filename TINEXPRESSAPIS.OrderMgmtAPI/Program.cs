@@ -29,6 +29,9 @@ try
 
     builder.Services.AddHttpClient();
 
+    builder.Services.AddScoped<IShipmentService, ShipmentService>();
+    builder.Services.AddScoped<IShipmentRepository, ShipmentRepository>();
+
     builder.Services.AddScoped<IPackageTypeService, PackageTypeService>();
     builder.Services.AddScoped<IPackageTypeRepository, PackageTypeRepository>();
 
