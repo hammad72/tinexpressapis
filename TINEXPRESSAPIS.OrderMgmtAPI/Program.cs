@@ -1,6 +1,7 @@
 using Application.Interfaces;
 using Application.Mappings;
 using Application.Services;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Helpers;
@@ -28,6 +29,9 @@ try
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
 
     builder.Services.AddHttpClient();
+
+    builder.Services.AddScoped<IDashboardService, DashboardService>();
+    builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
 
     builder.Services.AddScoped<IExportRepository, ExportRepository>();
 
