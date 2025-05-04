@@ -8,6 +8,8 @@ namespace Application.Mappings
     {
         public MappingProfile()
         {
+            CreateMap<AgingReport, AgingReportDTO>();
+
             CreateMap<shipment_columns, shipmentDto>();
 
             CreateMap<options, OptionsDto>();

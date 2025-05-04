@@ -109,5 +109,17 @@ namespace Domain.Entities
         public DateTime? order_status_change_date { get; set; }
         public string? suburb_dropoff { get; set; }
     }
-
+    public class AgingReport
+    {
+        public string ConsignmentNumber { get; set; }
+        public string OrderNumber { get; set; }
+        public string SenderName { get; set; }
+        public string OrderStatusTitle { get; set; }
+        public int DaysInStatus { get; set; }
+        public string AgingBucket { get; set; }
+        public DateTime OrderStatusChangeDate { get; set; }
+        public string SuburbDropoff { get; set; }
+        public string StateDropoff { get; set; }
+        public DateTime? CollectedDate { get; set; }
+    }
 }

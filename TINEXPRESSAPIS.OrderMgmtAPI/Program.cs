@@ -29,6 +29,8 @@ try
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
 
     builder.Services.AddHttpClient();
+    builder.Services.AddScoped<IAgingReportService, AgingReportService>();
+    builder.Services.AddScoped<IAgingReportRepository, AgingReportRepository>();
 
     builder.Services.AddScoped<IDashboardService, DashboardService>();
     builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
