@@ -4,6 +4,7 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -67,41 +68,48 @@ namespace Infrastructure.Repositories
             var query = ApplyTimeFilter(_orderDBContext.orderdetails, timeFilter)
                 .Where(o => o.order_status_change_date != null);
 
-            if (timeFilter == "weekly")
+            switch (timeFilter.ToLower())
             {
-                var weeklyData = await query
-                    .GroupBy(o => o.order_status_change_date.Value.DayOfWeek)
-                    .Select(g => new
-                    {
-                        DayOfWeek = g.Key,
-                        Delivered = g.Count(o => o.order_status_id == 5),
-                        InTransit = g.Count(o => o.order_status_id == 2),
-                        Pending = g.Count(o => o.order_status_id == 1),
-                        Failed = g.Count(o => o.order_status_id == 6 || o.order_status_id == 8)
-                    })
-                    .ToListAsync();
-
-                return weeklyData.Select(x => new DailyOrderTrend
-                {
-                    Day = x.DayOfWeek.ToString(),
-                    Delivered = x.Delivered,
-                    InTransit = x.InTransit,
-                    Pending = x.Pending,
-                    Failed = x.Failed
-                }).ToList();
+                case "today":
+                    return await GetHourlyTrend(query);
+                case "weekly":
+                    return await GetWeeklyTrend(query);
+                case "monthly":
+                    return await GetMonthlyTrend(query);
+                case "yearly":
+                    return await GetYearlyTrend(query);
+                default:
+                    return await GetDefaultTrend(query);
             }
+        }
 
-            // Default to daily trend for last 7 days
-            var endDate = DateTime.Today;
-            var startDate = endDate.AddDays(-7);
+        private async Task<List<DailyOrderTrend>> GetHourlyTrend(IQueryable<orderdetails> query)
+        {
+            var now = DateTime.Now;
+            var startDate = now.Date;
 
-            var dailyData = await query
-                .Where(o => o.order_status_change_date >= startDate &&
-                           o.order_status_change_date <= endDate)
-                .GroupBy(o => o.order_status_change_date.Value.Date)
+            return await query
+                .Where(o => o.order_status_change_date >= startDate)
+                .GroupBy(o => new { Hour = o.order_status_change_date.Value.Hour / 2 })
+                .Select(g => new DailyOrderTrend
+                {
+                    Day = $"{g.Key.Hour * 2}:00-{(g.Key.Hour * 2) + 2}:00",
+                    Delivered = g.Count(o => o.order_status_id == 5),
+                    InTransit = g.Count(o => o.order_status_id == 2),
+                    Pending = g.Count(o => o.order_status_id == 1),
+                    Failed = g.Count(o => o.order_status_id == 6 || o.order_status_id == 8)
+                })
+                .OrderBy(x => x.Day)
+                .ToListAsync();
+        }
+
+        private async Task<List<DailyOrderTrend>> GetWeeklyTrend(IQueryable<orderdetails> query)
+        {
+            var weeklyData = await query
+                .GroupBy(o => o.order_status_change_date.Value.DayOfWeek)
                 .Select(g => new
                 {
-                    Date = g.Key,
+                    DayOfWeek = g.Key,
                     Delivered = g.Count(o => o.order_status_id == 5),
                     InTransit = g.Count(o => o.order_status_id == 2),
                     Pending = g.Count(o => o.order_status_id == 1),
@@ -109,14 +117,103 @@ namespace Infrastructure.Repositories
                 })
                 .ToListAsync();
 
-            return dailyData.Select(x => new DailyOrderTrend
+            // Ensure all days of week are present
+            var allDays = Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>();
+            return allDays.Select(day =>
             {
-                Day = x.Date.ToString("ddd"),
-                Delivered = x.Delivered,
-                InTransit = x.InTransit,
-                Pending = x.Pending,
-                Failed = x.Failed
-            }).OrderBy(x => x.Day).ToList();
+                var dayData = weeklyData.FirstOrDefault(d => d.DayOfWeek == day);
+                return new DailyOrderTrend
+                {
+                    Day = day.ToString(),
+                    Delivered = dayData?.Delivered ?? 0,
+                    InTransit = dayData?.InTransit ?? 0,
+                    Pending = dayData?.Pending ?? 0,
+                    Failed = dayData?.Failed ?? 0
+                };
+            }).ToList();
+        }
+
+        private async Task<List<DailyOrderTrend>> GetMonthlyTrend(IQueryable<orderdetails> query)
+        {
+            var now = DateTime.Now;
+            var daysInMonth = DateTime.DaysInMonth(now.Year, now.Month);
+
+            var monthlyData = await query
+                .GroupBy(o => o.order_status_change_date.Value.Day)
+                .Select(g => new
+                {
+                    Day = g.Key,
+                    Delivered = g.Count(o => o.order_status_id == 5),
+                    InTransit = g.Count(o => o.order_status_id == 2),
+                    Pending = g.Count(o => o.order_status_id == 1),
+                    Failed = g.Count(o => o.order_status_id == 6 || o.order_status_id == 8)
+                })
+                .ToListAsync();
+
+            // Ensure all days of month are present
+            return Enumerable.Range(1, daysInMonth).Select(day =>
+            {
+                var dayData = monthlyData.FirstOrDefault(d => d.Day == day);
+                return new DailyOrderTrend
+                {
+                    Day = day.ToString(),
+                    Delivered = dayData?.Delivered ?? 0,
+                    InTransit = dayData?.InTransit ?? 0,
+                    Pending = dayData?.Pending ?? 0,
+                    Failed = dayData?.Failed ?? 0
+                };
+            }).ToList();
+        }
+
+        private async Task<List<DailyOrderTrend>> GetYearlyTrend(IQueryable<orderdetails> query)
+        {
+            var yearlyData = await query
+                .GroupBy(o => new { Month = o.order_status_change_date.Value.Month })
+                .Select(g => new
+                {
+                    Month = g.Key.Month,
+                    Delivered = g.Count(o => o.order_status_id == 5),
+                    InTransit = g.Count(o => o.order_status_id == 2),
+                    Pending = g.Count(o => o.order_status_id == 1),
+                    Failed = g.Count(o => o.order_status_id == 6 || o.order_status_id == 8)
+                })
+                .ToListAsync();
+
+            // Ensure all months are present
+            return Enumerable.Range(1, 12).Select(month =>
+            {
+                var monthData = yearlyData.FirstOrDefault(m => m.Month == month);
+                return new DailyOrderTrend
+                {
+                    Day = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(month),
+                    Delivered = monthData?.Delivered ?? 0,
+                    InTransit = monthData?.InTransit ?? 0,
+                    Pending = monthData?.Pending ?? 0,
+                    Failed = monthData?.Failed ?? 0
+                };
+            }).ToList();
+        }
+
+        private async Task<List<DailyOrderTrend>> GetDefaultTrend(IQueryable<orderdetails> query)
+        {
+            // Default to last 7 days
+            var endDate = DateTime.Today;
+            var startDate = endDate.AddDays(-7);
+
+            return await query
+                .Where(o => o.order_status_change_date >= startDate &&
+                           o.order_status_change_date <= endDate)
+                .GroupBy(o => o.order_status_change_date.Value.Date)
+                .Select(g => new DailyOrderTrend
+                {
+                    Day = g.Key.ToString("ddd"),
+                    Delivered = g.Count(o => o.order_status_id == 5),
+                    InTransit = g.Count(o => o.order_status_id == 2),
+                    Pending = g.Count(o => o.order_status_id == 1),
+                    Failed = g.Count(o => o.order_status_id == 6 || o.order_status_id == 8)
+                })
+                .OrderBy(d => d.Day)
+                .ToListAsync();
         }
         //public async Task<List<DailyOrderTrend>> GetDailyOrderTrend(string timeFilter)
         //{
@@ -125,38 +222,54 @@ namespace Infrastructure.Repositories
 
         //    if (timeFilter == "weekly")
         //    {
-        //        return await query
+        //        var weeklyData = await query
         //            .GroupBy(o => o.order_status_change_date.Value.DayOfWeek)
-        //            .Select(g => new DailyOrderTrend
+        //            .Select(g => new
         //            {
-        //                Day = g.Key.ToString(),
+        //                DayOfWeek = g.Key,
         //                Delivered = g.Count(o => o.order_status_id == 5),
         //                InTransit = g.Count(o => o.order_status_id == 2),
         //                Pending = g.Count(o => o.order_status_id == 1),
         //                Failed = g.Count(o => o.order_status_id == 6 || o.order_status_id == 8)
         //            })
-        //            .OrderBy(d => d.Day)
         //            .ToListAsync();
+
+        //        return weeklyData.Select(x => new DailyOrderTrend
+        //        {
+        //            Day = x.DayOfWeek.ToString(),
+        //            Delivered = x.Delivered,
+        //            InTransit = x.InTransit,
+        //            Pending = x.Pending,
+        //            Failed = x.Failed
+        //        }).ToList();
         //    }
 
         //    // Default to daily trend for last 7 days
         //    var endDate = DateTime.Today;
         //    var startDate = endDate.AddDays(-7);
 
-        //    return await query
+        //    var dailyData = await query
         //        .Where(o => o.order_status_change_date >= startDate &&
         //                   o.order_status_change_date <= endDate)
         //        .GroupBy(o => o.order_status_change_date.Value.Date)
-        //        .Select(g => new DailyOrderTrend
+        //        .Select(g => new
         //        {
-        //            Day = g.Key.ToString("ddd"),
+        //            Date = g.Key,
         //            Delivered = g.Count(o => o.order_status_id == 5),
         //            InTransit = g.Count(o => o.order_status_id == 2),
         //            Pending = g.Count(o => o.order_status_id == 1),
         //            Failed = g.Count(o => o.order_status_id == 6 || o.order_status_id == 8)
         //        })
-        //        .OrderBy(d => d.Day)
         //        .ToListAsync();
+
+        //    return dailyData.Select(x => new DailyOrderTrend
+        //    {
+        //        Day = x.Date.ToString("ddd"),
+        //        Delivered = x.Delivered,
+        //        InTransit = x.InTransit,
+        //        Pending = x.Pending,
+        //        Failed = x.Failed
+        //    }).OrderBy(x => x.Day).ToList();
         //}
 
 
