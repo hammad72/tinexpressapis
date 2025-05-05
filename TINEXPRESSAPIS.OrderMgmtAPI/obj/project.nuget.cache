@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "Lt/JjQ/sU0zn375OIjGBjlbpF3LxdI5J7fU+MUW1UXyJoB02BksiGYHTLcfrQ/YB9b2QVpVlTPs/p2H4yPEyHg==",
+  "dgSpecHash": "jLEBn5P7wGQ=",
   "success": true,
   "projectFilePath": "C:\\TIN Projects\\GIT-Lab\\tinexpressapis\\TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hamma\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\closedxml.parser\\1.3.0\\closedxml.parser.1.3.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\documentformat.openxml\\3.1.1\\documentformat.openxml.3.1.1.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\documentformat.openxml.framework\\3.1.1\\documentformat.openxml.framework.3.1.1.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\documentformat.openxml\\3.3.0\\documentformat.openxml.3.3.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\documentformat.openxml.framework\\3.3.0\\documentformat.openxml.framework.3.3.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\google.apis\\1.69.0\\google.apis.1.69.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\google.apis.auth\\1.69.0\\google.apis.auth.1.69.0.nupkg.sha512",
@@ -18,14 +18,15 @@
     "C:\\Users\\hamma\\.nuget\\packages\\mailkit\\4.12.0\\mailkit.4.12.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\8.0.15\\microsoft.aspnetcore.authentication.facebook.8.0.15.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.15\\microsoft.aspnetcore.authentication.jwtbearer.8.0.15.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\microsoft.bcl.memory.9.0.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.4\\microsoft.bcl.cryptography.9.0.4.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.bcl.memory\\9.0.4\\microsoft.bcl.memory.9.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.4\\microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.4\\microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.4\\microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.4\\microsoft.entityframeworkcore.relational.8.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.4\\microsoft.extensions.caching.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.4\\microsoft.extensions.caching.memory.9.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.4\\microsoft.extensions.configuration.9.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.4\\microsoft.extensions.configuration.abstractions.9.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.4\\microsoft.extensions.configuration.binder.9.0.4.nupkg.sha512",
@@ -42,27 +43,148 @@
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.9.0\\microsoft.identitymodel.abstractions.8.9.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.9.0\\microsoft.identitymodel.jsonwebtokens.8.9.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.logging\\8.9.0\\microsoft.identitymodel.logging.8.9.0.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.9.0\\microsoft.identitymodel.protocols.8.9.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.9.0\\microsoft.identitymodel.protocols.openidconnect.8.9.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.9.0\\microsoft.identitymodel.tokens.8.9.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\mimekit\\4.12.0\\mimekit.4.12.0.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.2\\pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\rbush\\4.0.0\\rbush.4.0.0.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\sixlabors.fonts\\2.1.3\\sixlabors.fonts.2.1.3.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\system.codedom\\9.0.4\\system.codedom.9.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.4\\system.diagnostics.diagnosticsource.9.0.4.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\system.formats.asn1\\8.0.2\\system.formats.asn1.8.0.2.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\system.formats.asn1\\9.0.4\\system.formats.asn1.9.0.4.nupkg.sha512",
     "C:\\Users\\hamma\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.9.0\\system.identitymodel.tokens.jwt.8.9.0.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512",
-    "C:\\Users\\hamma\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
+    "C:\\Users\\hamma\\.nuget\\packages\\system.io.packaging\\9.0.0\\system.io.packaging.9.0.0.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\system.management\\9.0.4\\system.management.9.0.4.nupkg.sha512",
+    "C:\\Users\\hamma\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "ClosedXML 0.104.2 depends on ClosedXML.Parser (>= 1.2.0 && < 2.0.0) but ClosedXML.Parser 1.2.0 was not found. ClosedXML.Parser 1.3.0 was resolved instead.",
+      "libraryId": "ClosedXML.Parser",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "ClosedXML 0.104.2 depends on DocumentFormat.OpenXml (>= 3.1.1 && < 4.0.0) but DocumentFormat.OpenXml 3.1.1 was not found. DocumentFormat.OpenXml 3.3.0 was resolved instead.",
+      "libraryId": "DocumentFormat.OpenXml",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.IdentityModel.Tokens 8.9.0 depends on Microsoft.Bcl.Memory (>= 9.0.0) but Microsoft.Bcl.Memory 9.0.0 was not found. Microsoft.Bcl.Memory 9.0.4 was resolved instead.",
+      "libraryId": "Microsoft.Bcl.Memory",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.EntityFrameworkCore 8.0.4 depends on Microsoft.EntityFrameworkCore.Abstractions (>= 8.0.4) but Microsoft.EntityFrameworkCore.Abstractions 8.0.4 was not found. Microsoft.EntityFrameworkCore.Abstractions 9.0.4 was resolved instead.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Abstractions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.EntityFrameworkCore 8.0.4 depends on Microsoft.EntityFrameworkCore.Analyzers (>= 8.0.4) but Microsoft.EntityFrameworkCore.Analyzers 8.0.4 was not found. Microsoft.EntityFrameworkCore.Analyzers 9.0.4 was resolved instead.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Analyzers",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.EntityFrameworkCore 8.0.4 depends on Microsoft.Extensions.Caching.Memory (>= 8.0.0) but Microsoft.Extensions.Caching.Memory 8.0.0 was not found. Microsoft.Extensions.Caching.Memory 9.0.4 was resolved instead.",
+      "libraryId": "Microsoft.Extensions.Caching.Memory",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.AspNetCore.Authentication.JwtBearer 8.0.15 depends on Microsoft.IdentityModel.Protocols.OpenIdConnect (>= 7.1.2) but Microsoft.IdentityModel.Protocols.OpenIdConnect 7.1.2 was not found. Microsoft.IdentityModel.Protocols.OpenIdConnect 8.9.0 was resolved instead.",
+      "libraryId": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Pomelo.EntityFrameworkCore.MySql 8.0.2 depends on MySqlConnector (>= 2.3.5) but MySqlConnector 2.3.5 was not found. MySqlConnector 2.4.0 was resolved instead.",
+      "libraryId": "MySqlConnector",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "ClosedXML 0.104.2 depends on SixLabors.Fonts (>= 1.0.0) but SixLabors.Fonts 1.0.0 was not found. SixLabors.Fonts 2.1.3 was resolved instead.",
+      "libraryId": "SixLabors.Fonts",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "DocumentFormat.OpenXml.Framework 3.3.0 depends on System.IO.Packaging (>= 8.0.1) but System.IO.Packaging 8.0.1 was not found. System.IO.Packaging 9.0.0 was resolved instead.",
+      "libraryId": "System.IO.Packaging",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Google.Apis.Auth 1.69.0 depends on System.Management (>= 7.0.2) but System.Management 7.0.2 was not found. System.Management 9.0.4 was resolved instead.",
+      "libraryId": "System.Management",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MimeKit 4.12.0 depends on System.Security.Cryptography.Pkcs (>= 8.0.1) but System.Security.Cryptography.Pkcs 8.0.1 was not found. System.Security.Cryptography.Pkcs 9.0.4 was resolved instead.",
+      "libraryId": "System.Security.Cryptography.Pkcs",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
