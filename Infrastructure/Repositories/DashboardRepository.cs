@@ -469,7 +469,7 @@ namespace Infrastructure.Repositories
         //implementation of chart CLICK of recent orders
         public async Task<PaginatedList<RecentOrder>> GetRecentOrders(string timeFilter, int ordStatusID, string? barValue, int pageIndex, int pageSize, string dashType, int? customerId)
         {
-            var query = ApplyTimeFilterForRecentOrd(_orderDBContext.orderdetails, timeFilter, barValue);
+            var query = ApplyTimeFilterForRecentOrd(_orderDBContext.orderdetails, timeFilter, barValue,  dashType,  customerId);
 
             // Filter by status
             if (ordStatusID == 6 || ordStatusID == 7 || ordStatusID == 8 || ordStatusID == 9)
