@@ -28,9 +28,9 @@ namespace Application.Services
             _userLoginsRepository = userLoginsRepository;
             _mapper=mapper;
         }
-        public async Task<EmailOTPResponseDto> SendOTPAsync(string email)
+        public async Task<EmailOTPResponseDto> SendOTPAsync(string email, string utype)
         {
-            var user = await _userLoginsService.GetByEmaila(email);
+            var user = await _userLoginsService.GetByEmaila(email,utype);
             if (user == null)
             {
                 return new EmailOTPResponseDto

@@ -55,15 +55,59 @@ namespace Infrastructure.Repositories
             _userMgmtDbContext.userlogins.Update(user);
             await _userMgmtDbContext.SaveChangesAsync();
         }
-        public async Task<userlogins> GetByEmailandPassword(string email, string password)
+        public async Task<userlogins> GetByEmailandPassword(string email, string password,string uType)
         {
             //    return await _userMgmtDbContext.userlogins
             //        .FirstOrDefaultAsync(x => x.username == email && x.password == password);
             try
             {
-                var user = await _userMgmtDbContext.userlogins
-            .FirstOrDefaultAsync(x => x.username == email && x.password == password);
-                return user;
+                if (uType == "admin")
+                {
+                    var Uprofile=await _userMgmtDbContext.userprofile.FirstOrDefaultAsync(x => x.email == email);
+                    if(Uprofile != null)
+                    {
+                        var user = await _userMgmtDbContext.userlogins
+          .                         FirstOrDefaultAsync(x => x.username == email && x.password == password);
+                        return user;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else if (uType=="customer")
+                {
+                    var cprofile = await _userMgmtDbContext.customerprofile.FirstOrDefaultAsync(x => x.email == email);
+                    if (cprofile != null)
+                    {
+                        var user = await _userMgmtDbContext.userlogins
+                                        .FirstOrDefaultAsync(x => x.username == email && x.password == password);
+                        return user;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else if (uType == "courier")
+                {
+                    var cprofile = await _userMgmtDbContext.couriers.FirstOrDefaultAsync(x => x.email == email);
+                    if (cprofile != null)
+                    {
+                        var user = await _userMgmtDbContext.userlogins
+                                        .FirstOrDefaultAsync(x => x.username == email && x.password == password);
+                        return user;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else
+                {
+                    return null;
+                }
+
             }
             catch (Exception ex)
             {
@@ -73,15 +117,60 @@ namespace Infrastructure.Repositories
             }
 
         }
-        public async Task<userlogins> GetByEmail(string email)
+        public async Task<userlogins> GetByEmail(string email,string uType)
         {
             //    return await _userMgmtDbContext.userlogins
             //        .FirstOrDefaultAsync(x => x.username == email && x.password == password);
             try
             {
-                var user = await _userMgmtDbContext.userlogins
-            .FirstOrDefaultAsync(x => x.username == email);
-                return user;
+                if (uType == "admin")
+                {
+                    var Uprofile = await _userMgmtDbContext.userprofile.FirstOrDefaultAsync(x => x.email == email);
+               
+                    if (Uprofile != null)
+                    {
+                        var user = await _userMgmtDbContext.userlogins
+                                      .FirstOrDefaultAsync(x => x.username == email);
+                        return user;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else if (uType == "customer")
+                {
+                    var cprofile = await _userMgmtDbContext.customerprofile.FirstOrDefaultAsync(x => x.email == email);
+                    if (cprofile != null)
+                    {
+                        var user = await _userMgmtDbContext.userlogins
+                                 .FirstOrDefaultAsync(x => x.username == email);
+                        return user;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else if (uType == "courier")
+                {
+                    var cprofile = await _userMgmtDbContext.couriers.FirstOrDefaultAsync(x => x.email == email);
+                    if (cprofile != null)
+                    {
+                        var user = await _userMgmtDbContext.userlogins
+                                             .FirstOrDefaultAsync(x => x.username == email);
+                        return user;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else
+                {
+                    return null;
+                }
+
             }
             catch (Exception ex)
             {

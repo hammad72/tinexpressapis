@@ -23,16 +23,20 @@ namespace Domain.Entities
     }
     public class OrderStatusDistribution
     {
+        public int id { get; set; }
         public string Status { get; set; }
         public int Count { get; set; }
     }
     public class DailyOrderTrend
     {
         public string Day { get; set; }
+        public int OrderBooked { get; set; }
+        public int Collected { get; set; }
+        public int AwaitingDispatch { get; set; }
+        public int OutForDelivery { get; set; }
         public int Delivered { get; set; }
-        public int InTransit { get; set; }
-        public int Pending { get; set; }
         public int Failed { get; set; }
+
     }
     public class RecentOrder
     {
