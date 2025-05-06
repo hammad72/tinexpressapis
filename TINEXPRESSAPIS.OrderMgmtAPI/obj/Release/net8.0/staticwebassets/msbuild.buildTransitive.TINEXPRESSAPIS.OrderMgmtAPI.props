@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TINEXPRESSAPIS.OrderMgmtAPI.props" />
+</Project>

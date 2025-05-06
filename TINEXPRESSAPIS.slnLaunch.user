@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.EmailNotificationController",
+    "Method": "SendOBEmail",
+    "RelativePath": "api/EmailNotification/SendOBEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pSuburb",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "rName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dSuburb",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "SendTestEmail",
+    "RelativePath": "api/SendOTP/send-test-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "SendOTPAdmin",
+    "RelativePath": "api/SendOTP/SendOTP-admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.EmailOTPRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "SendOTPCustomer",
+    "RelativePath": "api/SendOTP/SendOTP-customer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.EmailOTPRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "verifyOtpChangePass",
+    "RelativePath": "api/SendOTP/verify-otp-changePass",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.OtpChangePassRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
