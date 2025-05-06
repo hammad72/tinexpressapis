@@ -23,7 +23,7 @@ namespace Application.DTOs
     //    string? updated_by_name, int? warehouse_id, string? warehouse_title, string? rider_name, string? payment_status, string? invoice_number,
     //    DateTime? invoice_date, string? tracking_link, string? tracking_code);
 
-    public record shipmentDto(string? consignment_number, string? order_number, string? reciever_name, string? order_status_title, DateTime? order_status_change_date, string? suburb_dropoff, string? courier, string? suburb_pickup);
+    public record shipmentDto(string? consignment_number, string? order_number, string? reciever_name, string? order_status_title, DateTime? order_status_change_date, string? suburb_dropoff);
  
     //public class ShipmentFilterDto
     //{

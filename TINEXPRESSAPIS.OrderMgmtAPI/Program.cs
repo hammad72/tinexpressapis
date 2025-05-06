@@ -64,15 +64,6 @@ try
     builder.Services.AddScoped<ICustomerPriorityService, CustomerPriorityService>();
     builder.Services.AddScoped<ICustomerPriorityRepository, CustomerPriorityRepository>();
 
-    builder.Services.AddScoped<ICourierStatusesService, CourierStatusesService>();
-    builder.Services.AddScoped<ICourierStatusesRepository, CourierStatusesRepository>();
-
-    builder.Services.AddScoped<IOrderStatusesService, OrderStatusesService>();
-    builder.Services.AddScoped<IOrderStatusesRepository, OrderStatusesRepository>();
-
-    builder.Services.AddScoped<ICourierStatusMappingService, CourierStatusMappingService>();
-    builder.Services.AddScoped<ICourierStatusMappingRepository, CourierStatusMappingRepository>();
-
     builder.Services.AddAutoMapper(typeof(MappingProfile));
 
     builder.Services.AddControllers();

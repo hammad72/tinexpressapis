@@ -30,30 +30,30 @@ namespace Application.Services
         {
             return _mapper.Map<List<OptionsDto>>(await _repository.GetAllOptionsAsync());
         }
-        public async Task<List<shipmentDto>>getAllShipment( int? ordSource, int? opt, string? search)
+        public async Task<List<shipmentDto>>getAllShipment( int? ordSource, int? opt, string? search, int? customerID)
         {
-            return _mapper.Map<List<shipmentDto>>(await _repository.getAllShipment(ordSource, opt, search));
+            return _mapper.Map<List<shipmentDto>>(await _repository.getAllShipment(ordSource, opt, search, customerID));
         }
-        public async Task<PaginatedList<shipmentDto>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search)
+        public async Task<PaginatedList<shipmentDto>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search,int? customerID)
         {
             //var pagedOrderDetails = await _repository.GetOrderDetailsAsync(filterDto.OrderSource, filterDto.Option, filterDto.Search, filterDto.PageNumber, filterDto.PageSize);           
-            var paginatedList = await _repository.GetShipmentAsync(pageIndex, pageSize, ordSource, opt, search);
+            var paginatedList = await _repository.GetShipmentAsync(pageIndex, pageSize, ordSource, opt, search,customerID);
 
             var shipm = _mapper.Map<PaginatedList<shipmentDto>>(paginatedList);
             return shipm;
      
         }
 
-        public async Task<byte[]> ExportShipmentsToCsv(int? ordSource, int? opt, string? search)
+        public async Task<byte[]> ExportShipmentsToCsv(int? ordSource, int? opt, string? search, int? customerID)
         {
-            var shipments = await _repository.getAllShipment(ordSource, opt, search);
+            var shipments = await _repository.getAllShipment(ordSource, opt, search, customerID);
             var result = await _exporter.ExportToCsvAsync(shipments, "shipments");
             return result.Content;
         }
 
-        public async Task<byte[]> ExportShipmentsToExcel(int? ordSource, int? opt, string? search)
+        public async Task<byte[]> ExportShipmentsToExcel(int? ordSource, int? opt, string? search, int? customerID)
         {
-            var shipments = await _repository.getAllShipment(ordSource, opt, search);
+            var shipments = await _repository.getAllShipment(ordSource, opt, search, customerID);
             var result = await _exporter.ExportToExcelAsync(shipments, "Shipments", "shipments");
             return result.Content;
         }

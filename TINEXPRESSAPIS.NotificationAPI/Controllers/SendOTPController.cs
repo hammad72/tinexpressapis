@@ -39,14 +39,14 @@ namespace TINEXPRESSAPIS.NotificationAPI.Controllers
 
             return Ok(new { Success = result });
         }
-        [HttpPost("SendOTP")]
-        public async Task<IActionResult> SendOTP([FromBody] EmailOTPRequestDto request)
+        [HttpPost("SendOTP-admin")]
+        public async Task<IActionResult> SendOTPAdmin([FromBody] EmailOTPRequestDto request)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            var result = await _otpControlService.SendOTPAsync(request.Email);
+            var result = await _otpControlService.SendOTPAsync(request.Email,"admin");
 
             if (!result.Success)
             {
@@ -63,7 +63,30 @@ namespace TINEXPRESSAPIS.NotificationAPI.Controllers
             });
 
         }
+        [HttpPost("SendOTP-customer")]
+        public async Task<IActionResult> SendOTPCustomer([FromBody] EmailOTPRequestDto request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var result = await _otpControlService.SendOTPAsync(request.Email,"customer");
 
+            if (!result.Success)
+            {
+                return BadRequest(new { result.Message });
+            }
+
+            return Ok(new
+            {
+                Success = true,
+                Message = result.Message,
+                uid = result.uid,
+                email = result.email
+                // OTP = result.OTP // Only include for debugging
+            });
+
+        }
         [HttpPost("verify-otp-changePass")]
         public async Task<IActionResult> verifyOtpChangePass([FromBody] OtpChangePassRequestDTO request)
         {

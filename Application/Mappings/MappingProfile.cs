@@ -82,22 +82,6 @@ namespace Application.Mappings
             CreateMap<customerbudget, CustomerBudgetDto>();
             CreateMap<CreateCustomerBudgetDto, customerbudget>();
             CreateMap<UpdateCustomerBudgetDto, customerbudget>();
-
-            CreateMap<orderstatuses, OrderStatusesDto>();
-            CreateMap<CreateOrderStatusesDto, orderstatuses>();
-            CreateMap<UpdateOrderStatusesDto, orderstatuses>();
-
-            CreateMap<orderstatuses, OrderStatusesDto>();
-            CreateMap<CreateOrderStatusesDto, orderstatuses>();
-            CreateMap<UpdateOrderStatusesDto, orderstatuses>();
-
-            CreateMap<courierstatuses, CourierStatusesDto>();
-            CreateMap<CreateCourierStatusesDto, courierstatuses>();
-            CreateMap<UpdateCourierStatusesDto, courierstatuses>();
-
-            CreateMap<courierstatusmapping, CourierStatusMappingDto>();
-            CreateMap<CreateCourierStatusMappingDto, courierstatusmapping>();
-            CreateMap<UpdateCourierStatusMappingDto, courierstatusmapping>();
         }
     }
 }
