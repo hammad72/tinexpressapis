@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\TINEXPRESSAPIS.NotificationAPI.props" />
-</Project>
