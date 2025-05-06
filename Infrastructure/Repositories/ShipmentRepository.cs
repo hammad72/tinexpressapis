@@ -56,7 +56,9 @@ namespace Infrastructure.Repositories
                     order_status_title = s.order_status_title,
                     order_number = s.order_number,
                     order_status_change_date = s.order_status_change_date,
-                    suburb_dropoff = s.suburb_dropoff
+                    suburb_dropoff = s.suburb_dropoff,
+                    courier = s.courier_title,
+                    suburb_pickup = s.suburb_pickup
                 })
                 .OrderByDescending(o => o.order_status_change_date)
                 .ToList();
@@ -103,7 +105,9 @@ namespace Infrastructure.Repositories
                     order_status_title = s.order_status_title,
                     order_number = s.order_number,
                     order_status_change_date = s.order_status_change_date,
-                    suburb_dropoff = s.suburb_dropoff
+                    suburb_dropoff = s.suburb_dropoff,
+                    courier = s.courier_title,
+                    suburb_pickup = s.suburb_pickup
                 })
                 .OrderByDescending(o => o.order_status_change_date);
 
