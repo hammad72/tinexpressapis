@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "lYF/i2/LsRjAhZ2lbtbvP5H6mo+0lrv0gAKRMhb+H4k=",
+  "Source": "TINEXPRESSAPIS.NotificationAPI",
+  "BasePath": "_content/TINEXPRESSAPIS.NotificationAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
