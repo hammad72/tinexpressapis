@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TINEXPRESSAPIS.UserMgmtAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53edc873d20099e68cda945a2d647ab231819acc")]
 [assembly: System.Reflection.AssemblyProductAttribute("TINEXPRESSAPIS.UserMgmtAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TINEXPRESSAPIS.UserMgmtAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

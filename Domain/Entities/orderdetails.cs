@@ -94,10 +94,36 @@ namespace Domain.Entities
         public DateTime? invoice_date { get; set; }
         public string? tracking_link { get; set; }
         public string? tracking_code { get; set; }
+        public int? customer_id { get; set; }
+        public string? customer_title { get; set; }
     }
     public class order
     {
         public orderdetails odd { get; set; }
         public List<orderitems> oid { get; set; }
+    }
+    public class shipment_columns {
+        public string? consignment_number { get; set; }
+        public string? order_number { get; set; }
+      
+        public string? reciever_name { get; set; }
+        public string? order_status_title { get; set; }
+        public DateTime? order_status_change_date { get; set; }
+        public string? suburb_dropoff { get; set; }
+        public string? courier { get; set; }
+        public string? suburb_pickup { get; set; }
+    }
+    public class AgingReport
+    {
+        public string ConsignmentNumber { get; set; }
+        public string OrderNumber { get; set; }
+        public string SenderName { get; set; }
+        public string OrderStatusTitle { get; set; }
+        public int DaysInStatus { get; set; }
+        public string AgingBucket { get; set; }
+        public DateTime OrderStatusChangeDate { get; set; }
+        public string SuburbDropoff { get; set; }
+        public string StateDropoff { get; set; }
+        public DateTime? CollectedDate { get; set; }
     }
 }

@@ -4,13 +4,15 @@
     "Projects": [
       {
         "Path": "TINEXPRESSAPIS.UserMgmtAPI\\TINEXPRESSAPIS.UserMgmtAPI.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
+        "Action": "Start"
       },
       {
         "Path": "TINEXPRESSAPIS.OrderMgmtAPI\\TINEXPRESSAPIS.OrderMgmtAPI.csproj",
-        "Action": "Start",
-        "DebugTarget": "https"
+        "Action": "Start"
+      },
+      {
+        "Path": "TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj",
+        "Action": "Start"
       }
     ]
   }

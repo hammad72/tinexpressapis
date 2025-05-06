@@ -8,6 +8,22 @@ namespace Application.Mappings
     {
         public MappingProfile()
         {
+            CreateMap<AgingReport, AgingReportDTO>();
+
+            CreateMap<shipment_columns, shipmentDto>();
+
+            CreateMap<options, OptionsDto>();
+
+            CreateMap<ordersource, OrderSourceDto>();
+
+            CreateMap<socialinfo, SocialInfoDTO>();
+
+            CreateMap<loginmodel, LoginModelDto>();
+            CreateMap<CreateAndUpdateLoginModelDto, loginmodel>();
+
+            CreateMap<logindetail, LoginDetailDto>();
+            CreateMap<CreateLoginDetailDto, logindetail>();
+
             CreateMap<userlogins, UserLoginsDto>();
             CreateMap<CreateUserLoginsDto, userlogins>();
             CreateMap<UpdateUserLoginsDto, userlogins>();
@@ -56,6 +72,32 @@ namespace Application.Mappings
 
             CreateMap<OrderItemsDto, orderitems>();
             CreateMap<orderitems, OrderItemsDto>();
+
+            CreateMap<CreateCustomerPriorityDtoArr, customerpriorityArr>();
+            CreateMap<customerpriority, CustomerPriorityDto>();
+            CreateMap<CreateCustomerPriorityDto, customerpriority>();
+            CreateMap<UpdateCustomerPriorityDto, customerpriority>();
+
+            CreateMap<CreateCustomerBudgetDtoArr, customerbudgetArr>();
+            CreateMap<customerbudget, CustomerBudgetDto>();
+            CreateMap<CreateCustomerBudgetDto, customerbudget>();
+            CreateMap<UpdateCustomerBudgetDto, customerbudget>();
+
+            CreateMap<orderstatuses, OrderStatusesDto>();
+            CreateMap<CreateOrderStatusesDto, orderstatuses>();
+            CreateMap<UpdateOrderStatusesDto, orderstatuses>();
+
+            CreateMap<orderstatuses, OrderStatusesDto>();
+            CreateMap<CreateOrderStatusesDto, orderstatuses>();
+            CreateMap<UpdateOrderStatusesDto, orderstatuses>();
+
+            CreateMap<courierstatuses, CourierStatusesDto>();
+            CreateMap<CreateCourierStatusesDto, courierstatuses>();
+            CreateMap<UpdateCourierStatusesDto, courierstatuses>();
+
+            CreateMap<courierstatusmapping, CourierStatusMappingDto>();
+            CreateMap<CreateCourierStatusMappingDto, courierstatusmapping>();
+            CreateMap<UpdateCourierStatusMappingDto, courierstatusmapping>();//test
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Application.DTOs
         string? reason,string? reason_customer,string? reason_courier,int? failed_attempts_return,string? reason_return,
         string? reason_lost,string? received_by,DateTime? created_at,int? created_by,DateTime? updated_at,int? updated_by,
         string? updated_by_name,int? warehouse_id,string? warehouse_title,string? rider_name,string? payment_status,string? invoice_number,
-        DateTime? invoice_date,string? tracking_link,string? tracking_code);
+        DateTime? invoice_date,string? tracking_link,string? tracking_code,int? customer_id,string? customer_title);
     public record CreateOrderDetailsDto(string? order_number, string? sender_name, string? sender_email,
         string? sender_phone, string? reciever_name, string? reciever_email, string? reciever_phone, string? address_pickup,
         string? unit_num_pickup, string? street_number_pickup, string? street_pickup, string? suburb_pickup, string? postcode_pickup,
@@ -31,5 +31,5 @@ namespace Application.DTOs
         int? courier_id, string? courier_title, string? delivery_type, DateTime? booking_date, DateTime? collection_datetime,
         string? pickup_date, string? pickup_time, float? quote_price, float? sale_tax, float? price, float? net_price, bool? leave_at_delivery,
         string? special_instructions, string? order_latlong,DateTime? order_status_change_date, string? status_latlong,
-        int? no_of_attempts, int? created_by, string? tracking_link, string? tracking_code);
+        int? no_of_attempts, int? created_by, string? tracking_link, string? tracking_code, int? customer_id, string? customer_title);
 }

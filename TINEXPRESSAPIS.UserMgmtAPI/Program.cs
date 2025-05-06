@@ -39,6 +39,8 @@ builder.Services.AddScoped<ICourierUserProfileRepository, CourierUserProfileRepo
 builder.Services.AddScoped<IUserTypesService, UserTypesService>();
 builder.Services.AddScoped<IUserTypesRepository, UserTypesRepository>();
 
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+builder.Services.AddScoped<IJwtTokenRepository, JwtTokenRepository>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddControllers();

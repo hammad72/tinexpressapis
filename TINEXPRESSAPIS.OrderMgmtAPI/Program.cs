@@ -1,6 +1,7 @@
 using Application.Interfaces;
 using Application.Mappings;
 using Application.Services;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Helpers;
@@ -27,6 +28,18 @@ try
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
 
+    builder.Services.AddHttpClient();
+    builder.Services.AddScoped<IAgingReportService, AgingReportService>();
+    builder.Services.AddScoped<IAgingReportRepository, AgingReportRepository>();
+
+    builder.Services.AddScoped<IDashboardService, DashboardService>();
+    builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
+
+    builder.Services.AddScoped<IExportRepository, ExportRepository>();
+
+    builder.Services.AddScoped<IShipmentService, ShipmentService>();
+    builder.Services.AddScoped<IShipmentRepository, ShipmentRepository>();
+
     builder.Services.AddScoped<IPackageTypeService, PackageTypeService>();
     builder.Services.AddScoped<IPackageTypeRepository, PackageTypeRepository>();
 
@@ -38,6 +51,27 @@ try
 
     builder.Services.AddScoped<IOrderDetailsService, OrderDetailsService>();
     builder.Services.AddScoped<IOrderDetailsRepository, OrderDetailsRepository>();
+
+    builder.Services.AddScoped<IGetQuoteService, GetQuoteService>();
+    builder.Services.AddScoped<IGetQuoteRepository, GetQuoteRepository>();
+
+    builder.Services.AddScoped<ICourierBookingService, CourierBookingService>();
+    builder.Services.AddScoped<ICourierBookingRepository, CourierBookingRepository>();
+
+    builder.Services.AddScoped<ICustomerBudgetService, CustomerBudgetService>();
+    builder.Services.AddScoped<ICustomerBudgetRepository, CustomerBudgetRepository>();
+
+    builder.Services.AddScoped<ICustomerPriorityService, CustomerPriorityService>();
+    builder.Services.AddScoped<ICustomerPriorityRepository, CustomerPriorityRepository>();
+
+    builder.Services.AddScoped<ICourierStatusesService, CourierStatusesService>();
+    builder.Services.AddScoped<ICourierStatusesRepository, CourierStatusesRepository>();
+
+    builder.Services.AddScoped<IOrderStatusesService, OrderStatusesService>();
+    builder.Services.AddScoped<IOrderStatusesRepository, OrderStatusesRepository>();
+
+    builder.Services.AddScoped<ICourierStatusMappingService, CourierStatusMappingService>();
+    builder.Services.AddScoped<ICourierStatusMappingRepository, CourierStatusMappingRepository>();
 
     builder.Services.AddAutoMapper(typeof(MappingProfile));
 
@@ -93,6 +127,13 @@ catch (MySqlException ex)
 {
     // Handle MySQL-specific exceptions
     Console.WriteLine($"MySQL error: {ex.Message}");
+}
+catch (AggregateException ex)
+{
+    foreach (var innerException in ex.InnerExceptions)
+    {
+        Console.WriteLine($"Inner exception: {innerException.Message}");
+    }
 }
 catch (Exception ex)
 {
