@@ -51,7 +51,7 @@ namespace TINEXPRESSAPIS.OrderMgmtAPI.Controllers
             var dashboardData = await _dashboardService.GetDashboardData(timeFilter, "Customer",customerID);
             return Ok(dashboardData);
         }
-        [HttpGet("get-recent-orders-customer")] //admin
+        [HttpGet("get-recent-orders-customer")] 
         public async Task<IActionResult> getRecentOrders(string timeFilter, int ordStatusID, string? barValue, int pageIndex, int pageSize,int customerID)
         {
             var paginatedList = await _dashboardService.GetRecentOrders(timeFilter, ordStatusID, barValue, pageIndex, pageSize, "Customer", customerID);

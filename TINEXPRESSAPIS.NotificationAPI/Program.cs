@@ -37,6 +37,14 @@ builder.Services.AddScoped<ISendOTPRepository, SendOTPRepository>();
 builder.Services.AddScoped<IUserLoginsService, UserLoginsService>();
 builder.Services.AddScoped<IUserLoginsRepository, UserLoginsRepository>();
 
+builder.Services.AddScoped<ICustomerProfileService, CustomerProfileService>();
+builder.Services.AddScoped<ICustomerProfileRepository, CustomerProfileRepository>();
+
+builder.Services.AddScoped<ICustomerUserProfileService, CustomerUserProfileService>();
+builder.Services.AddScoped<ICustomerUserProfileRepository, CustomerUserProfileRepository>();
+
+builder.Services.AddScoped<IUserProfileService, UserProfileService>();
+builder.Services.AddScoped<IUserProfileRepository, UserProfileRepository>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddControllers();

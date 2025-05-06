@@ -94,6 +94,8 @@ namespace Domain.Entities
         public DateTime? invoice_date { get; set; }
         public string? tracking_link { get; set; }
         public string? tracking_code { get; set; }
+        public int? customer_id { get; set; }
+        public string? customer_title { get; set; }
     }
     public class order
     {

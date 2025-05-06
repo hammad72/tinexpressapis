@@ -421,7 +421,7 @@ namespace Infrastructure.Repositories
             else if (dashType =="Customer")
             {
         
-                query = query.Where(o => o.order_status_change_date != null && o.courier_id==customerId );//need to verify this logic where is the customer id
+                query = query.Where(o => o.order_status_change_date != null && o.customer_id==customerId );//need to verify this logic where is the customer id
             }
             var now = DateTime.Now;
 
@@ -524,7 +524,7 @@ namespace Infrastructure.Repositories
             else if (dashType == "Customer")
             {
 
-                query = query.Where(o => o.order_status_change_date != null && o.courier_id == customerId);//need to verify this logic where is the customer id
+                query = query.Where(o => o.order_status_change_date != null && o.customer_id == customerId);//need to verify this logic where is the customer id
             }
  
 

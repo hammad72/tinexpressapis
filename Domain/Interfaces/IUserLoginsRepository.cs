@@ -9,13 +9,13 @@ namespace Domain.Interfaces
         Task DeleteAsync(int id);
         Task<int> AddAsync(userlogins ul);
         Task UpdateAsync(userlogins ul);
-        Task<userlogins?> GetByEmailandPassword(string email, string password);
+        Task<userlogins?> GetByEmailandPassword(string email, string password, string uType);
 
         Task AddLoginDetailAsync(logindetail ld);
         Task AddUpdateLoginModel(loginmodel lm);
         Task<loginmodel?> GetLoginModel(string refreshToken);
         Task<socialinfo> socialGoogle(string requestToken);
         Task<socialinfo> socialFb(string requestToken);
-        Task<userlogins?> GetByEmail(string email);
+        Task<userlogins?> GetByEmail(string email, string uType);
     }
 }
