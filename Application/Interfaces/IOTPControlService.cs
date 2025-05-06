@@ -9,7 +9,7 @@ namespace Application.Interfaces
 {
     public interface IOTPControlService
     {
-        Task<EmailOTPResponseDto> SendOTPAsync(string email);
+        Task<EmailOTPResponseDto> SendOTPAsync(string email,string utype);
         Task<OtpChangePassDTO> verifyOTpControl(OtpChangePassRequestDTO param);
     }
 }

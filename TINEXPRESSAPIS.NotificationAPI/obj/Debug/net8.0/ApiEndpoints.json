@@ -47,8 +47,24 @@
   },
   {
     "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
-    "Method": "SendOTP",
-    "RelativePath": "api/SendOTP/SendOTP",
+    "Method": "SendOTPAdmin",
+    "RelativePath": "api/SendOTP/SendOTP-admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.EmailOTPRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TINEXPRESSAPIS.NotificationAPI.Controllers.SendOTPController",
+    "Method": "SendOTPCustomer",
+    "RelativePath": "api/SendOTP/SendOTP-customer",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
