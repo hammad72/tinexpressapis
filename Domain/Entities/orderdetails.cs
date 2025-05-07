@@ -94,6 +94,8 @@ namespace Domain.Entities
         public DateTime? invoice_date { get; set; }
         public string? tracking_link { get; set; }
         public string? tracking_code { get; set; }
+        public int? customer_id { get; set; }
+        public string? customer_title { get; set; }
     }
     public class order
     {
@@ -108,6 +110,8 @@ namespace Domain.Entities
         public string? order_status_title { get; set; }
         public DateTime? order_status_change_date { get; set; }
         public string? suburb_dropoff { get; set; }
+        public string? courier { get; set; }
+        public string? suburb_pickup { get; set; }
     }
     public class AgingReport
     {

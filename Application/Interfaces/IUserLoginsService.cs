@@ -14,12 +14,13 @@ namespace Application.Interfaces
         Task<int> AddAsync(CreateUserLoginsDto cUserLoginsDto);
         Task DeleteAsync(int id);
         Task UpdateAsync(UpdateUserLoginsDto uUserLoginsDto);
-        Task<UserLoginsDto> GetByEmailandPassword(string email, string password);
-        Task<UserLoginsDto> GetByEmaila(string email);
+        Task<UserLoginsDto> GetByEmailandPassword(string email, string password, string uType);
+        Task<UserLoginsDto> GetByEmaila(string email, string uType);
         Task AddLoginDetailAsync(CreateLoginDetailDto ld);
         Task AddAndUpdateLoginModel(CreateAndUpdateLoginModelDto lm);
         Task<LoginModelDto> GetLoginModel(string refreshToken);
         Task<SocialInfoDTO> socialGoogle(string requestToken);
         Task<SocialInfoDTO> socialFb(string requestToken);
+        Task<int> socialSignUp(string email, string name, string uType);
     }
 }

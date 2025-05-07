@@ -21,12 +21,15 @@ namespace Infrastructure.Repositories
         public async Task<List<ordersource>> GetAllOrderSourceAsync() => await _DbContext.ordersource.ToListAsync();
         public async Task<List<options>> GetAllOptionsAsync() => await _DbContext.options.ToListAsync();
 
-        public async Task<List<shipment_columns>> getAllShipment(int? ordSource, int? opt, string? search)
+        public async Task<List<shipment_columns>> getAllShipment(int? ordSource, int? opt, string? search, int? customerID)
         {
             try
             {
                 var query = _DbContext.orderdetails.AsQueryable();
-
+                if (customerID != null)
+                {
+                    query = query.Where(x => x.customer_id == customerID);
+                }
                 if (!string.IsNullOrEmpty(search) && opt.HasValue)
                 {
                     query = opt.Value switch
@@ -56,7 +59,9 @@ namespace Infrastructure.Repositories
                     order_status_title = s.order_status_title,
                     order_number = s.order_number,
                     order_status_change_date = s.order_status_change_date,
-                    suburb_dropoff = s.suburb_dropoff
+                    suburb_dropoff = s.suburb_dropoff,
+                    courier = s.courier_title,
+                    suburb_pickup = s.suburb_pickup
                 })
                 .OrderByDescending(o => o.order_status_change_date)
                 .ToList();
@@ -68,12 +73,15 @@ namespace Infrastructure.Repositories
                 throw; // Re-throw the exception after logging
             }
         }
-        public async Task<PaginatedList<shipment_columns>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search)
+        public async Task<PaginatedList<shipment_columns>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search, int? customerID)
         {
             try
             {
                 var query = _DbContext.orderdetails.AsQueryable();
-
+                if (customerID != null)
+                {
+                    query = query.Where(x => x.customer_id == customerID);
+                }
                 if (!string.IsNullOrEmpty(search) && opt.HasValue)
                 {
                     query = opt.Value switch
@@ -103,7 +111,9 @@ namespace Infrastructure.Repositories
                     order_status_title = s.order_status_title,
                     order_number = s.order_number,
                     order_status_change_date = s.order_status_change_date,
-                    suburb_dropoff = s.suburb_dropoff
+                    suburb_dropoff = s.suburb_dropoff,
+                    courier = s.courier_title,
+                    suburb_pickup = s.suburb_pickup
                 })
                 .OrderByDescending(o => o.order_status_change_date);
 
