@@ -16,11 +16,15 @@ namespace Application.Services
         private readonly IShipmentRepository _repository;
         private readonly IMapper _mapper;
         private readonly IExportRepository _exporter;
-        public ShipmentService(IShipmentRepository repository, IMapper mapper,IExportRepository exporter)
+        private readonly IOrderDetailsRepository _orderDetailRepo;
+        private readonly IUserLoginsRepository _userLoginRepo;
+        public ShipmentService(IShipmentRepository repository, IMapper mapper,IExportRepository exporter,IOrderDetailsRepository orderDetailsRepository,IUserLoginsRepository userLoginsRepository)
         {
             _mapper = mapper;
             _repository = repository;
             _exporter = exporter;
+            _orderDetailRepo = orderDetailsRepository;
+            _userLoginRepo = userLoginsRepository;
         }
         public async Task<List<OrderSourceDto>> GetAllOrderSourceAsync()
         {
@@ -56,6 +60,59 @@ namespace Application.Services
             var shipments = await _repository.getAllShipment(ordSource, opt, search, customerID);
             var result = await _exporter.ExportToExcelAsync(shipments, "Shipments", "shipments");
             return result.Content;
+        }
+       public async Task<PaginatedList<OrderItemsDto>> getOrderItemsByConsignment(int pageIndex, int pageSize, string consignment)
+        {
+            var paginatedList = await _repository.getOrderItemsByConsignment(pageIndex, pageSize, consignment);
+
+            var shipm = _mapper.Map<PaginatedList<OrderItemsDto>>(paginatedList);
+            return shipm;
+
+        }
+        public async Task<ShipmentDetailOrderItemsDTO> getShipmentItemsAsync(int pageIndex, int pageSize, string consignment)
+        {
+            try
+            {
+                var orderDetail = await _orderDetailRepo.getOrderByConsignmentAsync(consignment);
+                if (orderDetail == null)
+                    return null;
+
+                var userInfo = await _userLoginRepo.GetAsync((int)orderDetail.created_by);
+
+                var paginatedListTask = _repository.getOrderItemsByConsignment(pageIndex, pageSize, consignment);
+                var senderReceiverTask = Task.Run(() => _repository.getSenderRecieverOrderItems(orderDetail));
+                var summaryTask = Task.Run(() => _repository.getSummaryOrderItems(orderDetail));
+                var trackingTask = Task.Run(() => _repository.getTrackingOrderItems(orderDetail));
+
+                await Task.WhenAll(paginatedListTask, senderReceiverTask, summaryTask, trackingTask);
+
+                var activityLog = new ActivityLogOrderItemsDTO
+                {
+                    username = userInfo?.username,
+                    created_by = userInfo?.id,
+                    order_status_change_date = orderDetail.order_status_change_date
+                };
+
+                var senderReceiverDto = _mapper.Map<SenderRecieverOrderItemsDto>(await senderReceiverTask);
+                var summaryDto = _mapper.Map<SummaryOrderItemsDTO>(await summaryTask);
+                var trackingDto = _mapper.Map<TrackingOrderItemsDTO>(await trackingTask);
+
+                return new ShipmentDetailOrderItemsDTO
+                {
+                    SenderRecieverOrderItemsDto = senderReceiverDto,
+                    SummaryOrderItemsDTO = summaryDto,
+                    TrackingOrderItemsDTO = trackingDto,
+                    ActivityLogOrderItemsDTO = activityLog,
+                    paginatedListOrderItems = await paginatedListTask,
+                 
+                };
+            }
+            catch (Exception ex)
+            {
+
+                //_logger.LogError(ex, "Error getting shipment items for consignment {Consignment}", consignment);
+                throw;
+            }
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Infrastructure.Repositories
     public class ShipmentRepository:IShipmentRepository
     {
         private readonly OrderDbContext _DbContext;
+         
         public ShipmentRepository(OrderDbContext DbContext)
         {
             _DbContext = DbContext;
@@ -138,188 +139,125 @@ namespace Infrastructure.Repositories
                 throw; // Re-throw the exception after logging
             }
         }
-        //public async Task<PaginatedList<shipment_columns>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search)
-        //{
-        //    try
-        //    {
 
-        //        var query = _DbContext.orderdetails
-        //            //.Select(s=> new shipment_columns
-        //            //{ 
-        //            // consignment_number=s.consignment_number,
-        //            // reciever_name=s.reciever_name,
-        //            // order_status_title=s.order_status_title,
-        //            // order_number=s.order_number,
-        //            // order_status_change_date=s.order_status_change_date,
-        //            // suburb_dropoff=s.suburb_dropoff
-        //            //})
-        //            .AsQueryable();
-        //        var data=new List<shipment_columns>();
-        //        if (!string.IsNullOrEmpty(search))
-        //        {
-        //            if (ordSource == 1) //for call origin ordersource no column present
-        //            {
+        public async Task<PaginatedList<orderitems>> getOrderItemsByConsignment(int pageIndex, int pageSize, string consignment)
+        {
+            try
+            {
+                var query = _DbContext.orderitems.AsQueryable();
 
-        //            }
-        //            else if (ordSource == 2)
-        //            {
+                query = query.Where(x => x.consignment_number == consignment);
+                //var projectedQuery = query.Select(s => new shipment_columns
+                //{
+                //    consignment_number = s.consignment_number,
+                //    reciever_name = s.reciever_name,
+                //    order_status_title = s.order_status_title,
+                //    order_number = s.order_number,
+                //    order_status_change_date = s.order_status_change_date,
+                //    suburb_dropoff = s.suburb_dropoff,
+                //    courier = s.courier_title,
+                //    suburb_pickup = s.suburb_pickup
+                //})
+                //.OrderByDescending(o => o.order_status_change_date);
 
-        //            }
-        //            else if (ordSource == 3)
-        //            {
+                var projectedQuery = query.OrderByDescending(o => o.id);
+                var totalCount = await projectedQuery.CountAsync();
+                var items = await projectedQuery
+                    .Skip((pageIndex - 1) * pageSize)
+                    .Take(pageSize)
+                    .ToListAsync();
 
-        //            }
-        //            else if (ordSource == 4)
-        //            {
+                return new PaginatedList<orderitems>
+                {
+                    PageIndex = pageIndex,
+                    PageSize = pageSize,
+                    TotalCount = totalCount,
+                    TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize),
+                    Items = items
+                };
+            }
+            catch (Exception ex)
+            {
+                // Log the exception here
+                throw; // Re-throw the exception after logging
+            }
+        }
 
-        //            }
-        //            else if (ordSource == 5)
-        //            {
+        public  SenderRecieverOrderItems getSenderRecieverOrderItems(orderdetails order)
+        {
+            try
+            {
+                //var query = _DbContext.orderdetails.AsQueryable();
 
-        //            }
-        //            if (opt == 1)
-        //            {
-        //                data = query.Where(x => x.order_number == search)
-        //                    .Select(s => new shipment_columns
-        //                    {
-        //                        consignment_number = s.consignment_number,
-        //                        reciever_name = s.reciever_name,
-        //                        order_status_title = s.order_status_title,
-        //                        order_number = s.order_number,
-        //                        order_status_change_date = s.order_status_change_date,
-        //                        suburb_dropoff = s.suburb_dropoff
-        //                    }).ToList();
-        //            }
-        //            else if (opt == 2)
-        //            {
-        //                data = query.Where(x => x.consignment_number == search)
-        //                       .Select(s => new shipment_columns
-        //                       {
-        //                           consignment_number = s.consignment_number,
-        //                           reciever_name = s.reciever_name,
-        //                           order_status_title = s.order_status_title,
-        //                           order_number = s.order_number,
-        //                           order_status_change_date = s.order_status_change_date,
-        //                           suburb_dropoff = s.suburb_dropoff
-        //                       }).ToList();
-        //            }
-        //            else if (opt == 3)
-        //            {
-        //                data = query.Where(x => x.order_status_title == search)
-        //                      .Select(s => new shipment_columns
-        //                      {
-        //                          consignment_number = s.consignment_number,
-        //                          reciever_name = s.reciever_name,
-        //                          order_status_title = s.order_status_title,
-        //                          order_number = s.order_number,
-        //                          order_status_change_date = s.order_status_change_date,
-        //                          suburb_dropoff = s.suburb_dropoff
-        //                      }).ToList();
+                //var order = await query
+                //    .Where(x => x.consignment_number == consignment)
+                //    .FirstOrDefaultAsync();
 
-        //            }
-        //            else if (opt == 4)
-        //            {
-        //                data = query.Where(x => x.courier_title == search)
-        //                 .Select(s => new shipment_columns
-        //                 {
-        //                     consignment_number = s.consignment_number,
-        //                     reciever_name = s.reciever_name,
-        //                     order_status_title = s.order_status_title,
-        //                     order_number = s.order_number,
-        //                     order_status_change_date = s.order_status_change_date,
-        //                     suburb_dropoff = s.suburb_dropoff
-        //                 }).ToList();
+                if (order == null)
+                {
+               
+                    return null; 
+                }
 
-        //            }
-        //            else if (opt == 5)
-        //            {
+                return new SenderRecieverOrderItems
+                {
+                    sender_name = order.sender_name,  
+                    sender_email = order.sender_email,
+                    sender_phone = order.sender_phone,
+                    reciever_name = order.reciever_name,
+                    reciever_email = order.reciever_email,
+                    reciever_phone = order.reciever_phone,
+                    address_pickup = order.address_pickup,
+                    address_dropoff = order.address_dropoff
+                };
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
 
-        //                data = query.Where(x => x.suburb_pickup == search)
-        //                 .Select(s => new shipment_columns
-        //                 {
-        //                     consignment_number = s.consignment_number,
-        //                     reciever_name = s.reciever_name,
-        //                     order_status_title = s.order_status_title,
-        //                     order_number = s.order_number,
-        //                     order_status_change_date = s.order_status_change_date,
-        //                     suburb_dropoff = s.suburb_dropoff
-        //                 }).ToList();
-        //            }
-        //            else if (opt == 6)
-        //            {
 
-        //                data = query.Where(x => x.sender_email == search)
-        //                 .Select(s => new shipment_columns
-        //                 {
-        //                     consignment_number = s.consignment_number,
-        //                     reciever_name = s.reciever_name,
-        //                     order_status_title = s.order_status_title,
-        //                     order_number = s.order_number,
-        //                     order_status_change_date = s.order_status_change_date,
-        //                     suburb_dropoff = s.suburb_dropoff
-        //                 }).ToList();
-        //            }
-        //            else if (opt == 7)
-        //            {
+        public  SummaryOrderItems getSummaryOrderItems(orderdetails order)
+        {
+            try
+            {
+                //var query = _DbContext.orderdetails.AsQueryable();
 
-        //                data = query.Where(x => x.suburb_dropoff == search)
-        //                 .Select(s => new shipment_columns
-        //                 {
-        //                     consignment_number = s.consignment_number,
-        //                     reciever_name = s.reciever_name,
-        //                     order_status_title = s.order_status_title,
-        //                     order_number = s.order_number,
-        //                     order_status_change_date = s.order_status_change_date,
-        //                     suburb_dropoff = s.suburb_dropoff
-        //                 }).ToList();
-        //            }
-        //            else if (opt == 8)
-        //            {
+                //var ordDetail = await query
+                //    .Where(x => x.consignment_number == consignment)
+                //    .FirstOrDefaultAsync();
 
-        //                data = query.Where(x => x.reciever_email == search)
-        //                 .Select(s => new shipment_columns
-        //                 {
-        //                     consignment_number = s.consignment_number,
-        //                     reciever_name = s.reciever_name,
-        //                     order_status_title = s.order_status_title,
-        //                     order_number = s.order_number,
-        //                     order_status_change_date = s.order_status_change_date,
-        //                     suburb_dropoff = s.suburb_dropoff
-        //                 }).ToList();
+                if (order == null )
+                {
+                    return null;
+                }
 
-        //            }
-        //        }
-        //        data = query
-        //          .Select(s => new shipment_columns
-        //          {
-        //              consignment_number = s.consignment_number,
-        //              reciever_name = s.reciever_name,
-        //              order_status_title = s.order_status_title,
-        //              order_number = s.order_number,
-        //              order_status_change_date = s.order_status_change_date,
-        //              suburb_dropoff = s.suburb_dropoff
-        //          })
-        //          .OrderByDescending(o => o.order_status_change_date)
-        //          .ToList();
-        //        //query = query.OrderByDescending(o => o.order_status_change_date);
-        //        var totalCount =  data.Count();
-        //        //var items = await data.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
-        //        var items =  data.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+                return new SummaryOrderItems
+                {
+                    quote_price = order.quote_price,
+                    sale_tax = order.sale_tax,
+                    price = order.price,
+                    net_price = order.net_price
+                };
+            }
+            catch (Exception ex)
+            {
+                // Consider logging the exception here
+                return null;
+            }
+        }
 
-        //        return new PaginatedList<shipment_columns>
-        //        {
-        //            PageIndex = pageIndex,
-        //            PageSize = pageSize,
-        //            TotalCount = totalCount,
-        //            TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize),
-        //            Items = items
-        //        };
-        //    }
-        //    catch (Exception ex)
-        //    {
+        public TrackingOrderItems getTrackingOrderItems(orderdetails order)
+        {
+            var orderD = order.order_status_change_date;
+            return new TrackingOrderItems
+            {
+                order_status_change_date = orderD
+            };
+        }
 
-        //        throw;
-        //    }
-        //}
+  
+
     }
 }

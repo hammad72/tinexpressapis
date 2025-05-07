@@ -76,7 +76,7 @@ namespace TINEXPRESSAPIS.UserMgmtAPI.Controllers
                          RefreshToken: refreshToken,
                          RefreshTokenExpiryTime: refreshTokenExpiry
                     );
-                var cup=await customerUserProfileService.GetByIdAsync( user.id );
+                //var cup=await customerUserProfileService.GetByIdAsync( user.id );
                 await _userLoginsService.AddLoginDetailAsync(loginDetailObj);
                 await _userLoginsService.AddAndUpdateLoginModel(loginModelobj);
 
@@ -85,7 +85,7 @@ namespace TINEXPRESSAPIS.UserMgmtAPI.Controllers
                     Token = accessToken,
                     RefreshToken = refreshToken,
                     loginID = user.id,
-                    customerID= cup.customer_id
+                    //customerID= cup.customer_id
                 });
                 //var token = _jwtTokenService.GenerateToken(user.id.ToString(), user.username, new List<string> { "User" });
                 //return Ok(new { Token = token });
