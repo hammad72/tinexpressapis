@@ -19,14 +19,22 @@ namespace Application.Services
         }
         public async Task<int> AddAsync(CreateUserProfileDto_Ex cup)
         {
-            CreateUserLoginsDto cUserLoginsDto = new CreateUserLoginsDto(cup.email, "123123", cup.user_role_id, true, "", cup.created_by);
-            int ulid = await _ulRepository.AddAsync(_mapper.Map<userlogins>(cUserLoginsDto));
+            bool res = await _ulRepository.checkUserExist(cup.email);
+            if (res == false)
+            {
+                CreateUserLoginsDto cUserLoginsDto = new CreateUserLoginsDto(cup.email, "123123", cup.user_role_id, true, "", cup.created_by);
+                int ulid = await _ulRepository.AddAsync(_mapper.Map<userlogins>(cUserLoginsDto));
 
-            CreateUserProfileDto cc = new CreateUserProfileDto(ulid, cup.first_name, cup.last_name, cup.emp_num,
-            cup.email, cup.dob, cup.enrollment_date, cup.joining_date, cup.address, cup.postal_code, cup.city_id,
-            cup.phone_number, cup.other, cup.created_by, 1);
-            int upid = await _upRepository.AddAsync(_mapper.Map<userprofile>(cc));
-            return upid;
+                CreateUserProfileDto cc = new CreateUserProfileDto(ulid, cup.first_name, cup.last_name, cup.emp_num,
+                cup.email, cup.dob, cup.enrollment_date, cup.joining_date, cup.address, cup.postal_code, cup.city_id,
+                cup.phone_number, cup.other, cup.created_by, 1);
+                int upid = await _upRepository.AddAsync(_mapper.Map<userprofile>(cc));
+                return upid;
+            }
+            else
+            {
+                return -5;
+            }
         }
         public async Task DeleteAsync(int id)
         {

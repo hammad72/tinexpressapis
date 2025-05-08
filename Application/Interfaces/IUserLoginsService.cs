@@ -22,5 +22,6 @@ namespace Application.Interfaces
         Task<SocialInfoDTO> socialGoogle(string requestToken);
         Task<SocialInfoDTO> socialFb(string requestToken);
         Task<int> socialSignUp(string email, string name, string uType);
+        Task<bool> checkUserExist(string email);
     }
 }
