@@ -98,6 +98,10 @@ namespace Application.Mappings
             CreateMap<courierstatusmapping, CourierStatusMappingDto>();
             CreateMap<CreateCourierStatusMappingDto, courierstatusmapping>();
             CreateMap<UpdateCourierStatusMappingDto, courierstatusmapping>();//Test 2
+
+            CreateMap<SenderRecieverOrderItems, SenderRecieverOrderItemsDto>();
+            CreateMap<SummaryOrderItems, SummaryOrderItemsDTO>();
+            CreateMap<TrackingOrderItems, TrackingOrderItemsDTO>();
         }
     }
 }
