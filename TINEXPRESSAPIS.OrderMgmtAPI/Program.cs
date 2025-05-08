@@ -24,7 +24,11 @@ try
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DevConnectionOrder"))
         )
     );
-
+    builder.Services.AddDbContext<UserMgmtDbContext>
+    (options => options.UseMySql(
+        builder.Configuration.GetConnectionString("DevConnectionUserMgt"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DevConnectionUserMgt"))
+        )
+    );
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
 
@@ -73,6 +77,7 @@ try
     builder.Services.AddScoped<ICourierStatusMappingService, CourierStatusMappingService>();
     builder.Services.AddScoped<ICourierStatusMappingRepository, CourierStatusMappingRepository>();
 
+    builder.Services.AddScoped<IUserLoginsRepository, UserLoginsRepository>();
     builder.Services.AddAutoMapper(typeof(MappingProfile));
 
     builder.Services.AddControllers();

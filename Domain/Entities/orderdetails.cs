@@ -45,8 +45,8 @@ namespace Domain.Entities
         public string? delivery_type { get; set; }
         public DateTime? booking_date { get; set; }
         public DateTime? collection_datetime { get; set; }
-        public string? pickup_date { get; set; }
-        public string? pickup_time { get; set; }
+        public DateTime? pickup_date { get; set; }
+        public DateTime? pickup_time { get; set; }
         public DateTime? assigned_date { get; set; }
         public DateTime? delivered_datetime { get; set; }
         public float? quote_price { get; set; }

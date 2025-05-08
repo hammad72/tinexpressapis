@@ -153,5 +153,25 @@ namespace Infrastructure.Repositories
                 return null; //throw ex;
             }
         }
+        public async Task<orderdetails> getOrderByConsignmentAsync(string consignment)
+        {
+            try
+            {
+
+                var query = _orderDbContext.orderdetails.AsQueryable();
+
+                var order = await query
+                    .Where(x => x.consignment_number == consignment)
+                    .FirstOrDefaultAsync();
+
+                return order;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            } 
+
+            }
     }
 }
