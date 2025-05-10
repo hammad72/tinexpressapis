@@ -17,5 +17,6 @@ namespace Domain.Interfaces
         SenderRecieverOrderItems getSenderRecieverOrderItems(orderdetails order);
          SummaryOrderItems getSummaryOrderItems(orderdetails order);
          TrackingOrderItems getTrackingOrderItems(orderdetails order);
+        CourierInfoOrderItems getCourierInfo(orderdetails order);
     }
 }

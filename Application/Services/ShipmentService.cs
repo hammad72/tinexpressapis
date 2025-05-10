@@ -83,8 +83,9 @@ namespace Application.Services
                 var senderReceiverTask = Task.Run(() => _repository.getSenderRecieverOrderItems(orderDetail));
                 var summaryTask = Task.Run(() => _repository.getSummaryOrderItems(orderDetail));
                 var trackingTask = Task.Run(() => _repository.getTrackingOrderItems(orderDetail));
+                var courierTask = Task.Run(() => _repository.getCourierInfo(orderDetail));
 
-                await Task.WhenAll(paginatedListTask, senderReceiverTask, summaryTask, trackingTask);
+                await Task.WhenAll(paginatedListTask, senderReceiverTask, summaryTask, trackingTask,courierTask);
 
                 //var activityLog = new ActivityLogOrderItemsDTO
                 //{
@@ -96,12 +97,14 @@ namespace Application.Services
                 var senderReceiverDto = _mapper.Map<SenderRecieverOrderItemsDto>(await senderReceiverTask);
                 var summaryDto = _mapper.Map<SummaryOrderItemsDTO>(await summaryTask);
                 var trackingDto = _mapper.Map<TrackingOrderItemsDTO>(await trackingTask);
+                var courierDto = _mapper.Map<CourierInfoOrderItemsDTO>(await courierTask);
 
                 return new ShipmentDetailOrderItemsDTO
                 {
                     SenderRecieverOrderItemsDto = senderReceiverDto,
                     SummaryOrderItemsDTO = summaryDto,
                     TrackingOrderItemsDTO = trackingDto,
+                    CourierInfoOrderItemsDTO= courierDto,
                     //ActivityLogOrderItemsDTO = activityLog,
                     paginatedListOrderItems = await paginatedListTask,
                  
@@ -112,6 +115,34 @@ namespace Application.Services
 
                 //_logger.LogError(ex, "Error getting shipment items for consignment {Consignment}", consignment);
                 throw;
+            }
+        }
+
+
+        public async Task<int> changeOrderStatus(string consignment,int order_status_id)
+        {
+            try
+            {
+                var orderDetail = await _orderDetailRepo.getOrderByConsignmentAsync(consignment);
+                if (orderDetail == null) return 0;
+
+                orderDetail.order_status_id = order_status_id;
+                orderDetail.order_status_change_date=DateTime.Now;
+                var uObj = await _orderDetailRepo.UpdateOrderDetail(orderDetail);
+                if (uObj == null)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 1;
+                }
+
+            }
+            catch (Exception)
+            {
+
+                return 0;
             }
         }
     }

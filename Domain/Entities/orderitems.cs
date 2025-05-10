@@ -47,13 +47,22 @@ namespace Domain.Entities
     }
     public class TrackingOrderItems
     {
+        public int order_status_id { get; set; }
         public string order_status_title { get; set; }
         public DateTime? order_status_change_date { get; set; }
     }
-    public class ActivityLogOrderItems
+    //public class ActivityLogOrderItems
+    //{
+    //    public DateTime? order_status_change_date { get; set; }
+    //    public int? created_by { get; set; }
+    //    public string username { get; set; }
+    //}
+
+    public class CourierInfoOrderItems
     {
-        public DateTime? order_status_change_date { get; set; }
-        public int? created_by { get; set; }
-        public string username { get; set; }
+        public string leave_at_delivery { get; set; }
+        public string collection_datetime { get; set; }
+        public string pickup_time { get; set; }
+        public string job_number { get; set; }
     }
 }

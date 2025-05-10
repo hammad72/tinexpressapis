@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using DocumentFormat.OpenXml.Bibliography;
+using Domain.Entities;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Infrastructure.Repositories
 {
@@ -253,12 +255,44 @@ namespace Infrastructure.Repositories
             //var orderD = order.order_status_change_date;
             return new TrackingOrderItems
             {
+                order_status_id= (int)order.order_status_id,
                 order_status_title=order.order_status_title,
                 order_status_change_date = order.order_status_change_date
             };
         }
+        public CourierInfoOrderItems getCourierInfo(orderdetails order)
+        {
+            try
+            {
+                //var query = _DbContext.orderdetails.AsQueryable();
 
-  
+                //var order = await query
+                //    .Where(x => x.consignment_number == consignment)
+                //    .FirstOrDefaultAsync();
+
+                if (order == null)
+                {
+
+                    return null;
+                }
+
+                return new CourierInfoOrderItems
+                {
+                    leave_at_delivery = (bool)order.leave_at_delivery ? "Yes" : "No",
+                    collection_datetime =order.collection_datetime.Value.ToString("yyyy-MMM-dd"),
+                    pickup_time =order.pickup_time.ToString(),
+                    job_number=""
+
+                };
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+
+
 
     }
 }

@@ -16,6 +16,7 @@ namespace Application.DTOs
         public SenderRecieverOrderItemsDto SenderRecieverOrderItemsDto { get; set; }
         public SummaryOrderItemsDTO SummaryOrderItemsDTO { get; set; }
         public TrackingOrderItemsDTO TrackingOrderItemsDTO { get; set; }
+        public CourierInfoOrderItemsDTO CourierInfoOrderItemsDTO { get; set; }
         //public ActivityLogOrderItemsDTO ActivityLogOrderItemsDTO { get; set; }
         public PaginatedList<orderitems> paginatedListOrderItems { get; set; }
 
@@ -40,6 +41,7 @@ namespace Application.DTOs
     }
     public class TrackingOrderItemsDTO
     {
+        public int order_status_id { get; set; }
         public string order_status_title { get; set; }
         public DateTime? order_status_change_date { get; set; }
     }
@@ -49,4 +51,11 @@ namespace Application.DTOs
     //    public int? created_by { get; set; }
     //    public string username { get; set; }
     //}
+    public class CourierInfoOrderItemsDTO
+    {
+        public string leave_at_delivery { get; set; }
+        public string collection_datetime { get; set; }
+        public string pickup_time { get; set; }
+        public string job_number { get; set; }
+    }
 }
