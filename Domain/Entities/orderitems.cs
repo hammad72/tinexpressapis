@@ -47,6 +47,7 @@ namespace Domain.Entities
     }
     public class TrackingOrderItems
     {
+        public string order_status_title { get; set; }
         public DateTime? order_status_change_date { get; set; }
     }
     public class ActivityLogOrderItems

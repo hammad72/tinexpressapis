@@ -250,10 +250,11 @@ namespace Infrastructure.Repositories
 
         public TrackingOrderItems getTrackingOrderItems(orderdetails order)
         {
-            var orderD = order.order_status_change_date;
+            //var orderD = order.order_status_change_date;
             return new TrackingOrderItems
             {
-                order_status_change_date = orderD
+                order_status_title=order.order_status_title,
+                order_status_change_date = order.order_status_change_date
             };
         }
 

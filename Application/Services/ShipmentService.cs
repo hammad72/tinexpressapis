@@ -86,12 +86,12 @@ namespace Application.Services
 
                 await Task.WhenAll(paginatedListTask, senderReceiverTask, summaryTask, trackingTask);
 
-                var activityLog = new ActivityLogOrderItemsDTO
-                {
-                    username = userInfo?.username,
-                    created_by = userInfo?.id,
-                    order_status_change_date = orderDetail.order_status_change_date
-                };
+                //var activityLog = new ActivityLogOrderItemsDTO
+                //{
+                //    username = userInfo?.username,
+                //    created_by = userInfo?.id,
+                //    order_status_change_date = orderDetail.order_status_change_date
+                //};
 
                 var senderReceiverDto = _mapper.Map<SenderRecieverOrderItemsDto>(await senderReceiverTask);
                 var summaryDto = _mapper.Map<SummaryOrderItemsDTO>(await summaryTask);
@@ -102,7 +102,7 @@ namespace Application.Services
                     SenderRecieverOrderItemsDto = senderReceiverDto,
                     SummaryOrderItemsDTO = summaryDto,
                     TrackingOrderItemsDTO = trackingDto,
-                    ActivityLogOrderItemsDTO = activityLog,
+                    //ActivityLogOrderItemsDTO = activityLog,
                     paginatedListOrderItems = await paginatedListTask,
                  
                 };
