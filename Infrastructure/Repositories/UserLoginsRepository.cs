@@ -3,6 +3,7 @@ using Domain.Interfaces;
 using Google.Apis.Auth;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 
 namespace Infrastructure.Repositories
@@ -240,6 +241,15 @@ namespace Infrastructure.Repositories
             obj.email = fbData.RootElement.GetProperty("email").GetString();
             obj.name = fbData.RootElement.GetProperty("name").GetString();
             return obj;
+        }
+
+        public async Task<bool> checkUserExist(string email)
+        {
+            int userid = await _userMgmtDbContext.userlogins.Where(x=>x.username == email).Select(x=>x.id).FirstOrDefaultAsync();
+            if (userid >= 1)
+                return true;
+            else 
+                return false;
         }
     }
 }

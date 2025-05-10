@@ -25,6 +25,7 @@ namespace Domain.Entities
         public string? street_pickup { get; set; }
         public string? suburb_pickup { get; set; }
         public string? postcode_pickup { get; set; }
+        public string? city_pickup { get; set; }
         public string? state_pickup { get; set; }
         public string? country_pickup { get; set; }
         public bool? building_type_pickup { get; set; }
@@ -35,6 +36,7 @@ namespace Domain.Entities
         public string? street_dropoff { get; set; }
         public string? suburb_dropoff { get; set; }
         public string? postcode_dropoff { get; set; }
+        public string? city_dropoff { get; set; }
         public string? state_dropoff { get; set; }
         public string? country_dropoff { get; set; }
         public bool? building_type_dropoff { get; set; }
@@ -55,7 +57,7 @@ namespace Domain.Entities
         public float? net_price { get; set; }
         public bool? leave_at_delivery { get; set; }
         public string? special_instructions { get; set; }
-        public string? order_latlong { get; set; }
+        public string? order_latlotng { get; set; }
         public int? order_status_id { get; set; }
         public string? order_status_title { get; set; }
         public DateTime? order_status_change_date { get; set; }
