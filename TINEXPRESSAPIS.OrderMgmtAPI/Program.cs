@@ -80,6 +80,9 @@ try
     builder.Services.AddScoped<IUserLoginsRepository, UserLoginsRepository>();
     builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+    builder.Services.AddScoped<IFavAddressesService, FavAddressesService>();
+    builder.Services.AddScoped<IFavAddressesRepository, FavAddressesRepository>();
+
     builder.Services.AddControllers();
 
     builder.Services.AddCors(options =>
