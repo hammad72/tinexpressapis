@@ -106,6 +106,14 @@ namespace Application.Mappings
             CreateMap<favaddresses, FavAddressesDto>();
             CreateMap<CreateFavAddressesDto, favaddresses>();
             CreateMap<UpdateFavAddressesDto, favaddresses>();
+
+            CreateMap<savedpackages, SavedPackagesDto>();
+            CreateMap<CreateSavedPackagesDto, savedpackages>();
+            CreateMap<UpdateSavedPackagesDto, savedpackages>();
+
+            CreateMap<margins, MarginsDto>();
+            CreateMap<CreateMarginsDto, margins>();
+            CreateMap<UpdateMarginsDto, margins>();
         }
     }
 }

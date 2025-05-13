@@ -2,11 +2,6 @@
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
@@ -44,7 +39,7 @@ namespace Infrastructure.Repositories
             return data;
         }
 
-        public async Task<favaddresses> GetAsync(int id) => await _orderDbContext.favaddresses.FindAsync(id); 
+        public async Task<favaddresses> GetAsync(int id) => await _orderDbContext.favaddresses.FindAsync(id);
         
         public async Task<List<favaddresses>> GetByCIdAsync(int cid)
         {
