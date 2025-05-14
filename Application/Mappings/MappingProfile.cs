@@ -115,12 +115,6 @@ namespace Application.Mappings
             CreateMap<CreateMarginsDto, margins>();
             CreateMap<UpdateMarginsDto, margins>();
 
-            //CreateMap<rejectedparcels, RejectedParcelsDto>();
-            //CreateMap<CreateRejectedParcelsDto, rejectedparcels>();
-
-            //CreateMap<rejectedparcelitems, RejectedParcelItemsDto>();
-            //CreateMap<CreateRejectedParcelItemsDto, rejectedparcelitems>();
-
             CreateMap<RPDto, rp_rpi>();
             CreateMap<rp_rpi, RPDto>();
             CreateMap<RejectedParcelsDto, rejectedparcels>();
