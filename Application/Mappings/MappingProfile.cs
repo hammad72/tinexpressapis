@@ -102,6 +102,20 @@ namespace Application.Mappings
             CreateMap<SenderRecieverOrderItems, SenderRecieverOrderItemsDto>();
             CreateMap<SummaryOrderItems, SummaryOrderItemsDTO>();
             CreateMap<TrackingOrderItems, TrackingOrderItemsDTO>();
+
+
+            CreateMap<favaddresses, FavAddressesDto>();
+            CreateMap<CreateFavAddressesDto, favaddresses>();
+            CreateMap<UpdateFavAddressesDto, favaddresses>();
+
+            CreateMap<savedpackages, SavedPackagesDto>();
+            CreateMap<CreateSavedPackagesDto, savedpackages>();
+            CreateMap<UpdateSavedPackagesDto, savedpackages>();
+
+            CreateMap<margins, MarginsDto>();
+            CreateMap<CreateMarginsDto, margins>();
+            CreateMap<UpdateMarginsDto, margins>();
+
             CreateMap<CourierInfoOrderItems, CourierInfoOrderItemsDTO>();
         }
     }

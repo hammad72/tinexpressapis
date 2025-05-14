@@ -80,6 +80,15 @@ try
     builder.Services.AddScoped<IUserLoginsRepository, UserLoginsRepository>();
     builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+    builder.Services.AddScoped<IFavAddressesService, FavAddressesService>();
+    builder.Services.AddScoped<IFavAddressesRepository, FavAddressesRepository>();
+
+    builder.Services.AddScoped<ISavedPackagesService, SavedPackagesService>();
+    builder.Services.AddScoped<ISavedPackagesRepository, SavedPackagesRepository>();
+
+    builder.Services.AddScoped<IMarginsService, MarginsService>();
+    builder.Services.AddScoped<IMarginsRepository, MarginsRepository>();
+
     builder.Services.AddControllers();
 
     builder.Services.AddCors(options =>

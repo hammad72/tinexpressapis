@@ -19,6 +19,9 @@ namespace Infrastructure.Data
         public DbSet<orderstatuses> orderstatuses { get; set; }
         public DbSet<courierstatuses> courierstatuses { get; set; }
         public DbSet<courierstatusmapping> courierstatusmapping { get; set; }
+        public DbSet<favaddresses> favaddresses { get; set; }
+        public DbSet<savedpackages> savedpackages { get; set; }
+        public DbSet<margins> margins { get; set; }
         public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options)
         {
             //Test 3
