@@ -6,14 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using MySqlConnector;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
 
 namespace Infrastructure.Repositories
 {
@@ -47,6 +40,11 @@ namespace Infrastructure.Repositories
 
                 foreach (var item in oid)
                 {
+                    string ut = "";
+                    if(item.unit=="2")
+                        ut = "m";
+                    else
+                        ut = "cm";
                     orderitems oi = new orderitems();
                     oi.consignment_number = ConsignmentNumber;
                     oi.order_number = item.order_number;
@@ -54,12 +52,14 @@ namespace Infrastructure.Repositories
                     oi.package_type = item.package_type;
                     oi.package_content_id = item.package_content_id;
                     oi.package_content = item.package_content;
+                    oi.qty = item.qty;
                     oi.weight = item.weight;
                     oi.actual_weight = item.actual_weight;
                     oi.rider_weight = item.rider_weight;
                     oi.width = item.width;
                     oi.length = item.length;
                     oi.height = item.height;
+                    oi.unit = ut;
                     oiList.Add(oi);
                 }
 
@@ -170,8 +170,7 @@ namespace Infrastructure.Repositories
             {
 
                 throw;
-            } 
-
             }
+        }
     }
 }
