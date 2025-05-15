@@ -15,7 +15,8 @@ namespace Domain.Interfaces
         Task<PaginatedList<shipment_columns>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search, int? customerID);
         Task<PaginatedList<orderitems>> getOrderItemsByConsignment(int pageIndex, int pageSize, string consignment);
         SenderRecieverOrderItems getSenderRecieverOrderItems(orderdetails order);
-        SummaryOrderItems getSummaryOrderItems(orderdetails order);
-        TrackingOrderItems getTrackingOrderItems(orderdetails order);
+         SummaryOrderItems getSummaryOrderItems(orderdetails order);
+         TrackingOrderItems getTrackingOrderItems(orderdetails order);
+        CourierInfoOrderItems getCourierInfo(orderdetails order);
     }
 }

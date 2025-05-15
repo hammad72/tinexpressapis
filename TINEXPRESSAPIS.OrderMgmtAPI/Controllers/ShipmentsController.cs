@@ -79,5 +79,14 @@ namespace TINEXPRESSAPIS.OrderMgmtAPI.Controllers
             return Ok(detail);
 
         }
+
+        [HttpPut("update-orderstatus")]
+        public async Task<IActionResult> updateorderStatus(string consignment,int order_status_id)
+        {
+
+            var detail = await _shipmentService.changeOrderStatus( consignment,  order_status_id);
+            return Ok(detail);
+
+        }
     }
 }

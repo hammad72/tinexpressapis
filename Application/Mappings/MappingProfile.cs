@@ -103,6 +103,7 @@ namespace Application.Mappings
             CreateMap<SummaryOrderItems, SummaryOrderItemsDTO>();
             CreateMap<TrackingOrderItems, TrackingOrderItemsDTO>();
 
+
             CreateMap<favaddresses, FavAddressesDto>();
             CreateMap<CreateFavAddressesDto, favaddresses>();
             CreateMap<UpdateFavAddressesDto, favaddresses>();
@@ -115,6 +116,7 @@ namespace Application.Mappings
             CreateMap<CreateMarginsDto, margins>();
             CreateMap<UpdateMarginsDto, margins>();
 
+            CreateMap<CourierInfoOrderItems, CourierInfoOrderItemsDTO>();
             CreateMap<RPDto, rp_rpi>();
             CreateMap<rp_rpi, RPDto>();
             CreateMap<RejectedParcelsDto, rejectedparcels>();

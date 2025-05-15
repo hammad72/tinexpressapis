@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using DocumentFormat.OpenXml.InkML;
+using Domain.Entities;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Helpers;
@@ -166,11 +167,29 @@ namespace Infrastructure.Repositories
 
                 return order;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 throw;
+            } 
+
+         }
+        public async Task<orderdetails> UpdateOrderDetail(orderdetails o)
+        {
+            try
+            {
+                if (o == null) return null;
+
+                _orderDbContext.orderdetails.Update(o);
+                await _orderDbContext.SaveChangesAsync();
+                return o;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
             }
         }
     }
-}
+

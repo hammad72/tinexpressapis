@@ -15,5 +15,6 @@ namespace Domain.Interfaces
         Task<string> AddAsync(orderdetails od, List<orderitems> oi);
         //Task UpdateAsync(couriers c);
         Task<orderdetails> getOrderByConsignmentAsync(string consignment);
+        Task<orderdetails> UpdateOrderDetail(orderdetails o);
     }
 }
