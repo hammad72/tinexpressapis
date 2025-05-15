@@ -22,6 +22,8 @@ namespace Infrastructure.Data
         public DbSet<favaddresses> favaddresses { get; set; }
         public DbSet<savedpackages> savedpackages { get; set; }
         public DbSet<margins> margins { get; set; }
+        public DbSet<rejectedparcels> rejectedparcels { get; set; }
+        public DbSet<rejectedparcelitems> rejectedparcelitems { get; set; }
         public OrderDbContext(DbContextOptions<OrderDbContext> options) : base(options)
         {
             //Test 3

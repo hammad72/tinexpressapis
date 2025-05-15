@@ -117,6 +117,13 @@ namespace Application.Mappings
             CreateMap<UpdateMarginsDto, margins>();
 
             CreateMap<CourierInfoOrderItems, CourierInfoOrderItemsDTO>();
+            CreateMap<RPDto, rp_rpi>();
+            CreateMap<rp_rpi, RPDto>();
+            CreateMap<RejectedParcelsDto, rejectedparcels>();
+            CreateMap<rejectedparcels, RejectedParcelsDto>();
+
+            CreateMap<RejectedParcelItemsDto, rejectedparcelitems>();
+            CreateMap<rejectedparcelitems, RejectedParcelItemsDto>();
         }
     }
 }

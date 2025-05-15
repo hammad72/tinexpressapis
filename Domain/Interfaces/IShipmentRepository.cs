@@ -11,8 +11,8 @@ namespace Domain.Interfaces
     {
         Task<List<ordersource>> GetAllOrderSourceAsync();
         Task<List<options>> GetAllOptionsAsync();
-       Task<List<shipment_columns>> getAllShipment(int? ordSource, int? opt, string? search, int? customerID);
-        Task<PaginatedList<shipment_columns>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search,int? customerID);
+        Task<List<shipment_columns>> getAllShipment(int? ordSource, int? opt, string? search, int? customerID);
+        Task<PaginatedList<shipment_columns>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search, int? customerID);
         Task<PaginatedList<orderitems>> getOrderItemsByConsignment(int pageIndex, int pageSize, string consignment);
         SenderRecieverOrderItems getSenderRecieverOrderItems(orderdetails order);
          SummaryOrderItems getSummaryOrderItems(orderdetails order);

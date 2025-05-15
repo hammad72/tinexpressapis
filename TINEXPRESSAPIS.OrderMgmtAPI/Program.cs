@@ -89,6 +89,9 @@ try
     builder.Services.AddScoped<IMarginsService, MarginsService>();
     builder.Services.AddScoped<IMarginsRepository, MarginsRepository>();
 
+    builder.Services.AddScoped<IRejectedParcelsService, RejectedParcelsService>();
+    builder.Services.AddScoped<IRejectedParcelsRepository, RejectedParcelsRepository>();
+
     builder.Services.AddControllers();
 
     builder.Services.AddCors(options =>
