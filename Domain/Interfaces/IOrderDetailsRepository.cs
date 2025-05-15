@@ -10,7 +10,7 @@ namespace Domain.Interfaces
     public interface IOrderDetailsRepository
     {
         Task<List<order>> GetAllAsync();
-        Task<order> GetAsync(int id);
+        Task<orderdetails?> GetAsync(string cn);
         //Task DeleteAsync(int id);
         Task<string> AddAsync(orderdetails od, List<orderitems> oi);
         //Task UpdateAsync(couriers c);

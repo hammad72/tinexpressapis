@@ -13,6 +13,10 @@
       {
         "Path": "TINEXPRESSAPIS.NotificationAPI\\TINEXPRESSAPIS.NotificationAPI.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "TINEXPRESSAPIS.DownloadAPI\\TINEXPRESSAPIS.DownloadAPI.csproj",
+        "Action": "Start"
       }
     ]
   }

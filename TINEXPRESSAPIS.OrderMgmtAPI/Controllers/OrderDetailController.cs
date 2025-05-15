@@ -14,6 +14,9 @@ namespace TINEXPRESSAPIS.OrderMgmtAPI.Controllers
         private readonly IGetQuoteService _gqService = gqService;
         private readonly ICourierBookingService _cbService = cbService;
 
+        [HttpGet("{cn}")]
+        public async Task<IActionResult> GetById(string cn) => Ok(await _oService.GetByIdAsync(cn));
+
         [HttpPost]
         public async Task<IActionResult> Create(OrderDto OrderDto)
         {
