@@ -114,10 +114,9 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<order> GetAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+
+        public async Task<orderdetails?> GetAsync(string cn) => await _orderDbContext.orderdetails.Where(x => x.consignment_number == cn).FirstOrDefaultAsync();
+        
         private string generateCNUM() // Stored Procedure
         {
             try
