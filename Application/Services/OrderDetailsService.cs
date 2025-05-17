@@ -47,9 +47,9 @@ namespace Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<OrderDetailsDto> GetByIdAsync(int id)
+        public async Task<OrderDetailsDto?> GetByIdAsync(string cn)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<OrderDetailsDto?>(await _oRepository.GetAsync(cn));
         }
     }
 }

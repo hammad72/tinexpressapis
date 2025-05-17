@@ -68,7 +68,7 @@ namespace Application.Mappings
 
             CreateMap<OrderDto, order>();
             CreateMap<OrderDetailsDto, orderdetails>();
-            CreateMap<orderdetails, OrderDetailsDto>();
+            CreateMap<orderdetails, OrderDetailsDto>().ReverseMap();
 
             CreateMap<OrderItemsDto, orderitems>();
             CreateMap<orderitems, OrderItemsDto>();
