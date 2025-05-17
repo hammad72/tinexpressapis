@@ -124,6 +124,8 @@ namespace Application.Mappings
 
             CreateMap<RejectedParcelItemsDto, rejectedparcelitems>();
             CreateMap<rejectedparcelitems, RejectedParcelItemsDto>();
+
+            CreateMap<supportcomplains, supportcomplainsDTO>();
         }
     }
 }
