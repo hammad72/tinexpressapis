@@ -92,6 +92,12 @@ try
     builder.Services.AddScoped<IRejectedParcelsService, RejectedParcelsService>();
     builder.Services.AddScoped<IRejectedParcelsRepository, RejectedParcelsRepository>();
 
+    builder.Services.AddScoped<ISupportService, SupportService>();
+    builder.Services.AddScoped<ISupportRepository, SupportRepository>();
+
+
+    builder.Services.AddScoped<ICustomerUserProfileRepository, CustomerUserProfileRepository>();
+
     builder.Services.AddControllers();
 
     builder.Services.AddCors(options =>
@@ -131,7 +137,7 @@ try
 
 
     app.UseHttpsRedirection();
-
+    app.UseStaticFiles();
     app.UseCors(MyAllowSpecificOrigins);
 
     app.UseAuthorization();
