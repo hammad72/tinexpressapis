@@ -68,7 +68,7 @@ namespace Application.Mappings
 
             CreateMap<OrderDto, order>();
             CreateMap<OrderDetailsDto, orderdetails>();
-            CreateMap<orderdetails, OrderDetailsDto>();
+            CreateMap<orderdetails, OrderDetailsDto>().ReverseMap();
 
             CreateMap<OrderItemsDto, orderitems>();
             CreateMap<orderitems, OrderItemsDto>();
@@ -97,7 +97,35 @@ namespace Application.Mappings
 
             CreateMap<courierstatusmapping, CourierStatusMappingDto>();
             CreateMap<CreateCourierStatusMappingDto, courierstatusmapping>();
-            CreateMap<UpdateCourierStatusMappingDto, courierstatusmapping>();//test
+            CreateMap<UpdateCourierStatusMappingDto, courierstatusmapping>();//Test 2
+
+            CreateMap<SenderRecieverOrderItems, SenderRecieverOrderItemsDto>();
+            CreateMap<SummaryOrderItems, SummaryOrderItemsDTO>();
+            CreateMap<TrackingOrderItems, TrackingOrderItemsDTO>();
+
+
+            CreateMap<favaddresses, FavAddressesDto>();
+            CreateMap<CreateFavAddressesDto, favaddresses>();
+            CreateMap<UpdateFavAddressesDto, favaddresses>();
+
+            CreateMap<savedpackages, SavedPackagesDto>();
+            CreateMap<CreateSavedPackagesDto, savedpackages>();
+            CreateMap<UpdateSavedPackagesDto, savedpackages>();
+
+            CreateMap<margins, MarginsDto>();
+            CreateMap<CreateMarginsDto, margins>();
+            CreateMap<UpdateMarginsDto, margins>();
+
+            CreateMap<CourierInfoOrderItems, CourierInfoOrderItemsDTO>();
+            CreateMap<RPDto, rp_rpi>();
+            CreateMap<rp_rpi, RPDto>();
+            CreateMap<RejectedParcelsDto, rejectedparcels>();
+            CreateMap<rejectedparcels, RejectedParcelsDto>();
+
+            CreateMap<RejectedParcelItemsDto, rejectedparcelitems>();
+            CreateMap<rejectedparcelitems, RejectedParcelItemsDto>();
+
+            CreateMap<supportcomplains, supportcomplainsDTO>();
         }
     }
 }

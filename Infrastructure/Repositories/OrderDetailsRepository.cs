@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using DocumentFormat.OpenXml.InkML;
+using Domain.Entities;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Helpers;
@@ -6,14 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using MySqlConnector;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Transactions;
 
 namespace Infrastructure.Repositories
 {
@@ -47,6 +41,11 @@ namespace Infrastructure.Repositories
 
                 foreach (var item in oid)
                 {
+                    string ut = "";
+                    if(item.unit=="2")
+                        ut = "m";
+                    else
+                        ut = "cm";
                     orderitems oi = new orderitems();
                     oi.consignment_number = ConsignmentNumber;
                     oi.order_number = item.order_number;
@@ -54,12 +53,14 @@ namespace Infrastructure.Repositories
                     oi.package_type = item.package_type;
                     oi.package_content_id = item.package_content_id;
                     oi.package_content = item.package_content;
+                    oi.qty = item.qty;
                     oi.weight = item.weight;
                     oi.actual_weight = item.actual_weight;
                     oi.rider_weight = item.rider_weight;
                     oi.width = item.width;
                     oi.length = item.length;
                     oi.height = item.height;
+                    oi.unit = ut;
                     oiList.Add(oi);
                 }
 
@@ -113,10 +114,9 @@ namespace Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<order> GetAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+
+        public async Task<orderdetails?> GetAsync(string cn) => await _orderDbContext.orderdetails.Where(x => x.consignment_number == cn).FirstOrDefaultAsync();
+        
         private string generateCNUM() // Stored Procedure
         {
             try
@@ -153,5 +153,42 @@ namespace Infrastructure.Repositories
                 return null; //throw ex;
             }
         }
+        public async Task<orderdetails> getOrderByConsignmentAsync(string consignment)
+        {
+            try
+            {
+
+                var query = _orderDbContext.orderdetails.AsQueryable();
+
+                var order = await query
+                    .Where(x => x.consignment_number == consignment)
+                    .FirstOrDefaultAsync();
+
+                return order;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            } 
+
+         }
+        public async Task<orderdetails> UpdateOrderDetail(orderdetails o)
+        {
+            try
+            {
+                if (o == null) return null;
+
+                _orderDbContext.orderdetails.Update(o);
+                await _orderDbContext.SaveChangesAsync();
+                return o;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+            }
+        }
     }
-}
+

@@ -1,4 +1,4 @@
-bash
+﻿bash
 # Ignore Visual Studio files
 .vs/
 .vscode/
@@ -25,3 +25,8 @@ appsettings.Development.json
 appsettings.local.json
 *.tmp
 *.log
+
+# Ignore Publish Profiles
+/TINEXPRESSAPIS.NotificationAPI/Properties/PublishProfiles/TXStagingAtRiderServer.pubxml.user
+/TINEXPRESSAPIS.OrderMgmtAPI/Properties/PublishProfiles/TXStagingAtRiderServer.pubxml.user
+/TINEXPRESSAPIS.UserMgmtAPI/Properties/PublishProfiles/TXStagingAtRiderServer.pubxml.user

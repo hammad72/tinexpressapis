@@ -11,7 +11,7 @@ namespace Application.Interfaces
     public interface IOrderDetailsService
     {
         Task<List<OrderDetailsDto>> GetAllAsync();
-        Task<OrderDetailsDto> GetByIdAsync(int id);
+        Task<OrderDetailsDto?> GetByIdAsync(string cn);
         Task<string> AddAsync(OrderDetailsDto cOrderDetailDto, List<OrderItemsDto> cOrderItemsDto);
         //Task DeleteAsync(int id);
         //Task UpdateAsync(UpdateCouriersDto uCouriersDto);
