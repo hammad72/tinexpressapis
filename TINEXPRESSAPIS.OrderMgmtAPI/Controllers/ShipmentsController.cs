@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces;
 using Application.Services;
+using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TINEXPRESSAPIS.OrderMgmtAPI.Controllers
@@ -60,6 +61,32 @@ namespace TINEXPRESSAPIS.OrderMgmtAPI.Controllers
             return File(fileContent,
                 "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                 $"shipments_{DateTime.Now:yyyyMMdd}.xlsx");
+        }
+
+        [HttpGet("shipment-detail")]
+        public async Task<IActionResult> shipmentDetailAdmin(int pageIndex, int pageSize, string consignment)
+        {
+
+            var detail = await _shipmentService.getShipmentItemsAsync(pageIndex, pageSize, consignment);
+            return Ok(detail);
+
+        }
+        [HttpGet("shipment-items")]
+        public async Task<IActionResult> shipmentItems(int pageIndex, int pageSize, string consignment)
+        {
+
+            var detail = await _shipmentService.getOrderItemsByConsignment(pageIndex, pageSize, consignment);
+            return Ok(detail);
+
+        }
+
+        [HttpPut("update-orderstatus")]
+        public async Task<IActionResult> updateorderStatus(string consignment,int order_status_id)
+        {
+
+            var detail = await _shipmentService.changeOrderStatus( consignment,  order_status_id);
+            return Ok(detail);
+
         }
     }
 }

@@ -16,5 +16,8 @@ namespace Application.Interfaces
         Task<PaginatedList<shipmentDto>> GetShipmentAsync(int pageIndex, int pageSize, int? ordSource, int? opt, string? search,int? customerID);
         Task<byte[]> ExportShipmentsToCsv(int? ordSource, int? opt, string? search, int? customerID);
         Task<byte[]> ExportShipmentsToExcel(int? ordSource, int? opt, string? search, int? customerID);
+        Task<ShipmentDetailOrderItemsDTO> getShipmentItemsAsync(int pageIndex, int pageSize, string consignment);
+        Task<PaginatedList<OrderItemsDto>> getOrderItemsByConsignment(int pageIndex, int pageSize, string consignment);
+        Task<int> changeOrderStatus(string consignment, int order_status_id);
     }
 }

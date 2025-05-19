@@ -17,5 +17,6 @@ namespace Domain.Interfaces
         Task<socialinfo> socialGoogle(string requestToken);
         Task<socialinfo> socialFb(string requestToken);
         Task<userlogins?> GetByEmail(string email, string uType);
+        Task<bool> checkUserExist(string email);
     }
 }

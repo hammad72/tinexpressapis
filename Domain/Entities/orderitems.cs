@@ -27,4 +27,42 @@ namespace Domain.Entities
         public string? unit { get; set; }
 
     }
+    public class SenderRecieverOrderItems
+    {
+        public string? sender_name { get; set; }
+        public string? sender_email { get; set; }
+        public string? sender_phone { get; set; }
+        public string? reciever_name { get; set; }
+        public string? reciever_email { get; set; }
+        public string? reciever_phone { get; set; }
+        public string? address_pickup { get; set; }
+        public string? address_dropoff { get; set; }
+    }
+    public class SummaryOrderItems
+    {
+        public float? quote_price { get; set; }
+        public float? sale_tax { get; set; }
+        public float? price { get; set; }
+        public float? net_price { get; set; }
+    }
+    public class TrackingOrderItems
+    {
+        public int order_status_id { get; set; }
+        public string order_status_title { get; set; }
+        public DateTime? order_status_change_date { get; set; }
+    }
+    //public class ActivityLogOrderItems
+    //{
+    //    public DateTime? order_status_change_date { get; set; }
+    //    public int? created_by { get; set; }
+    //    public string username { get; set; }
+    //}
+
+    public class CourierInfoOrderItems
+    {
+        public string leave_at_delivery { get; set; }
+        public string collection_datetime { get; set; }
+        public string pickup_time { get; set; }
+        public string job_number { get; set; }
+    }
 }

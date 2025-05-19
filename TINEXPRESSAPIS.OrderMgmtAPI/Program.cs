@@ -24,7 +24,11 @@ try
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DevConnectionOrder"))
         )
     );
-
+    builder.Services.AddDbContext<UserMgmtDbContext>
+    (options => options.UseMySql(
+        builder.Configuration.GetConnectionString("DevConnectionUserMgt"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DevConnectionUserMgt"))
+        )
+    );
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
     //builder.Services.Configure<DbResource>(builder.Configuration.GetSection("DevConnectionOrder"));
 
@@ -73,7 +77,26 @@ try
     builder.Services.AddScoped<ICourierStatusMappingService, CourierStatusMappingService>();
     builder.Services.AddScoped<ICourierStatusMappingRepository, CourierStatusMappingRepository>();
 
+    builder.Services.AddScoped<IUserLoginsRepository, UserLoginsRepository>();
     builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+    builder.Services.AddScoped<IFavAddressesService, FavAddressesService>();
+    builder.Services.AddScoped<IFavAddressesRepository, FavAddressesRepository>();
+
+    builder.Services.AddScoped<ISavedPackagesService, SavedPackagesService>();
+    builder.Services.AddScoped<ISavedPackagesRepository, SavedPackagesRepository>();
+
+    builder.Services.AddScoped<IMarginsService, MarginsService>();
+    builder.Services.AddScoped<IMarginsRepository, MarginsRepository>();
+
+    builder.Services.AddScoped<IRejectedParcelsService, RejectedParcelsService>();
+    builder.Services.AddScoped<IRejectedParcelsRepository, RejectedParcelsRepository>();
+
+    builder.Services.AddScoped<ISupportService, SupportService>();
+    builder.Services.AddScoped<ISupportRepository, SupportRepository>();
+
+
+    builder.Services.AddScoped<ICustomerUserProfileRepository, CustomerUserProfileRepository>();
 
     builder.Services.AddControllers();
 
@@ -114,7 +137,7 @@ try
 
 
     app.UseHttpsRedirection();
-
+    app.UseStaticFiles();
     app.UseCors(MyAllowSpecificOrigins);
 
     app.UseAuthorization();

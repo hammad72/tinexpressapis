@@ -112,7 +112,6 @@ namespace Application.Services
             return mappedUser;
         }
 
-
         public async Task<int> socialSignUp(string email, string name,string uType)
         {
             if (uType == "admin")
@@ -187,6 +186,12 @@ namespace Application.Services
             }
                 
 
+        }
+
+        public async Task<bool> checkUserExist(string email)
+        {
+            bool res = await _ulRepository.checkUserExist(email);
+            return res;
         }
     }
 }
